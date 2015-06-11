@@ -36,6 +36,10 @@ export default Ember.Controller.extend({
 
   getCommonDomain: Ember.B,
 
-  smartInsert: Ember.B
+  smartInsert: Ember.B,
+
+  getLongest: Ember.B,
+
+  smartConcat: Ember.B
 
 });
