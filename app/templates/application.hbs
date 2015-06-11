@@ -1,3 +1,7 @@
-<h2 id="title">Welcome to Ember.js</h2>
-
-{{outlet}}
+<div class="container">
+  <h2>Разделы</h2>
+  {{#each model as |chapter index|}}
+    {{#link-to 'tasks' (query-params chapter=chapter.id) class="badge"}}{{chapter.name}}{{/link-to}}
+  {{/each}}
+  {{outlet}}
+</div>

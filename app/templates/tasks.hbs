@@ -1,0 +1,14 @@
+{{#if chapterModel.name}}
+  <h3>{{#link-to 'tasks' (query-params chapter='')}}Все задачи{{/link-to}} / {{chapterModel.name}} ({{filteredTasks.length}})</h3>
+{{else}}
+  <h3>Все задачи</h3>
+{{/if}}
+
+{{#each filteredTasks as |task index|}}
+  <div class="alert alert-warning">
+    {{partial 'partials/task'}}
+    <p></p>
+    <pre><code class="javascript">{{controller-method this task.chapter.id task.method}}</code></pre>
+  </div>
+{{/each}}
+

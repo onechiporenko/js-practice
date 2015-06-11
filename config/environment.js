@@ -13,6 +13,16 @@ module.exports = function(environment) {
       }
     },
 
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self' 'unsafe-inline' 'unsafe-eval' https://maxcdn.bootstrapcdn.com/ http://cdnjs.cloudflare.com/ ",
+      'font-src': "'self' 'unsafe-inline' 'unsafe-eval' https://maxcdn.bootstrapcdn.com/ http://cdnjs.cloudflare.com/ ",
+      'connect-src': "'self'",
+      'img-src': "'self'",
+      'style-src': "'self' 'unsafe-inline' 'unsafe-eval' https://maxcdn.bootstrapcdn.com/ http://cdnjs.cloudflare.com/ ",
+      'media-src': "'self'"
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

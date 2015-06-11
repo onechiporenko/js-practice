@@ -1,0 +1,9 @@
+{{! `task` - Task }}
+{{! `chapter` - Chapter }}
+
+<p>{{{task.description}}}</p>
+{{#unless chapter}}
+  <p>Раздел: {{#link-to 'tasks' (query-params chapter=task.chapter.id)}}{{task.chapter.name}}{{/link-to}}</p>
+{{/unless}}
+<p>Решение должно быть в: <kbd>app/controllers/solutions/{{task.chapter.id}}.js#{{task.method}}</kbd></p>
+<p>Тесты: <kbd>tests/unit/controllers/solutions/{{task.chapter.id}}/{{task.method}}-test.js</kbd> ({{{link-to-tests task.chapter.id task.method}}})</p>

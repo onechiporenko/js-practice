@@ -1,0 +1,20 @@
+{
+  "chapters": [
+    {
+      "id": "strings",
+      "name": "Строки"
+    },
+    {
+      "id": "objects",
+      "name": "Объекты"
+    },
+    {
+      "id": "numbers",
+      "name": "Числа"
+    },
+    {
+      "id": "arrays",
+      "name": "Массивы"
+    }
+  ]
+}
