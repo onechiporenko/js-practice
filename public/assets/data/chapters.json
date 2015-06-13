@@ -15,6 +15,10 @@
     {
       "id": "arrays",
       "name": "Массивы"
+    },
+    {
+      "id": "ajax",
+      "name": "Ajax"
     }
   ]
 }
