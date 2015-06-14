@@ -20,6 +20,22 @@ export default Ember.Controller.extend({
 
   getEvenIndexedElementReversed: Ember.B,
 
-  getWithSubstr: Ember.B
+  getWithSubstr: Ember.B,
+
+  getOddEvenElements: Ember.B,
+
+  getSnake00: Ember.B,
+
+  getSnakeNM: Ember.B,
+
+  getSnake0M: Ember.B,
+
+  getSnakeN0: Ember.B,
+
+  getVectorsSum: Ember.B,
+
+  getVectorsSum2: Ember.B,
+
+  vector2matrix: Ember.B
 
 });
