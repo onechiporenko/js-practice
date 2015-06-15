@@ -4,20 +4,20 @@ moduleFor('controller:solutions/arrays', 'solutions.arrays.getWithSubstr', {});
 
 test('test1', function(assert) {
   var controller = this.subject();
-  assert.deepEqual(controller.getWithSubstr([], ''), []);
+  assert.deepEqual(controller.getWithSubstr([], ''), [], `([], '') -> []`);
 });
 
 test('test2', function(assert) {
   var controller = this.subject();
-  assert.deepEqual(controller.getWithSubstr(['a'], ''), ['a']);
+  assert.deepEqual(controller.getWithSubstr(['a'], ''), ['a'], `(['a'], '') -> ['a']`);
 });
 
 test('test3', function(assert) {
   var controller = this.subject();
-  assert.deepEqual(controller.getWithSubstr(['a', 'abc'], 'bc'), ['abc']);
+  assert.deepEqual(controller.getWithSubstr(['a', 'abc'], 'bc'), ['abc'], `(['a', 'abc'], 'bc') -> ['abc']`);
 });
 
 test('test4', function(assert) {
   var controller = this.subject();
-  assert.deepEqual(controller.getWithSubstr(['a', 'abc', 'bca'], 'bc'), ['abc', 'bca']);
+  assert.deepEqual(controller.getWithSubstr(['a', 'abc', 'bca'], 'bc'), ['abc', 'bca'], `(['a', 'abc', 'bca'], 'bc') -> ['abc', 'bca']`);
 });
