@@ -36,6 +36,8 @@ export default Ember.Controller.extend({
 
   getVectorsSum2: Ember.B,
 
-  vector2matrix: Ember.B
+  vector2matrix: Ember.B,
+
+  makeArray: Ember.B
 
 });
