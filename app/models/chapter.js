@@ -4,6 +4,8 @@ export default DS.Model.extend({
 
   name: DS.attr('string'),
 
-  tasks: DS.hasMany('task')
+  tasks: DS.hasMany('task'),
+
+  section: DS.attr('string')
 
 });

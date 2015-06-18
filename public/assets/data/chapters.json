@@ -2,23 +2,38 @@
   "chapters": [
     {
       "id": "strings",
-      "name": "Строки"
+      "name": "Строки",
+      "section": "controllers"
     },
     {
       "id": "objects",
-      "name": "Объекты"
+      "name": "Объекты",
+      "section": "controllers"
     },
     {
       "id": "numbers",
-      "name": "Числа"
+      "name": "Числа",
+      "section": "controllers"
     },
     {
       "id": "arrays",
-      "name": "Массивы"
+      "name": "Массивы",
+      "section": "controllers"
     },
     {
       "id": "ajax",
-      "name": "Ajax"
+      "name": "Ajax",
+      "section": "controllers"
+    },
+    {
+      "id": "collections",
+      "name": "Collections",
+      "section": "controllers"
+    },
+    {
+      "id": "arguments",
+      "name": "Arguments",
+      "section": "controllers"
     }
   ]
 }

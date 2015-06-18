@@ -2,12 +2,19 @@ import Ember from 'ember';
 
 export function controllerMethod(params/*, hash*/) {
   var controller = params[0];
-  var solutionControllerName = params[1];
-  var methodName = params[2];
-  if (!solutionControllerName) {
+  var chapterId = params[1];
+  var section = params[2];
+  var methodName = params[3];
+  var method;
+  if (!chapterId) {
     return '';
   }
-  var method = controller.get('controllers.solutions/' + solutionControllerName)[methodName];
+  if (section === 'views') {
+    method = App.NAMESPACES[2].__container__.lookup('view:solutions/' + chapterId)[methodName];
+  }
+  else {
+      method = controller.get('controllers.solutions/' + chapterId)[methodName];
+  }
   return method ? method.toString() : '';
 }
 

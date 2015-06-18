@@ -14,6 +14,22 @@ export default Ember.Controller.extend({
 
   int2ip: Ember.B,
 
-  generateIpsRange: Ember.B
+  generateIpsRange: Ember.B,
+
+  getLine: Ember.B,
+
+  getSizeDiff: Ember.B,
+
+  checkIsPrime: Ember.B,
+
+  checkPow: Ember.B,
+
+  getMaxSize: Ember.B,
+
+  checkTriangle: Ember.B,
+
+  checkDotInCircle: Ember.B,
+
+  checkAllDigitsUnique: Ember.B
 
 });
