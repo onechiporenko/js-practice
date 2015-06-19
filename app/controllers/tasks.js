@@ -7,7 +7,7 @@ export default Ember.ArrayController.extend({
   chapter: null,
 
   needs: Ember.computed(function () {
-    return this.store.all('chapter').map(chapter => {
+    return this.store.all('chapter').filterBy('section', 'controllers').map(chapter => {
       return 'solutions/' + chapter.get('id');
     });
   }),

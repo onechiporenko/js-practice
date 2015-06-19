@@ -13,7 +13,12 @@ export function controllerMethod(params/*, hash*/) {
     method = App.NAMESPACES[2].__container__.lookup('view:solutions/' + chapterId)[methodName];
   }
   else {
+    if (section === 'components') {
+      method = App.NAMESPACES[2].__container__.lookup('components:solutions/' + chapterId)[methodName];
+    }
+    else {
       method = controller.get('controllers.solutions/' + chapterId)[methodName];
+    }
   }
   return method ? method.toString() : '';
 }
