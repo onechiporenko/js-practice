@@ -10,13 +10,10 @@ export function controllerMethod(params/*, hash*/) {
     return '';
   }
   if (section === 'views') {
-    method = App.NAMESPACES[2].__container__.lookup('view:solutions/' + chapterId)[methodName];
+    method = App.NAMESPACES[2].__container__.lookup('view:solutions/' + chapterId)._actions[methodName];
   }
   else {
-    if (section === 'components') {
-      method = App.NAMESPACES[2].__container__.lookup('components:solutions/' + chapterId)[methodName];
-    }
-    else {
+    if (section === 'controllers') {
       method = controller.get('controllers.solutions/' + chapterId)[methodName];
     }
   }

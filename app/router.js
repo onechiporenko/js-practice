@@ -7,6 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.resource('tasks');
+  this.resource('solutions.dom', { path: '/solutions/dom' });
 });
 
 export default Router;
