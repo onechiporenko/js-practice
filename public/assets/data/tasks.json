@@ -485,6 +485,12 @@
       "chapter": "dom",
       "description": "Функция находит на странице таблицы и для каждой четной строчки тела таблицы добавляет класс <kbd>c1</kbd>, а для нечетной - <kbd>c2</kbd>.",
       "method": "tableProcessing"
+    },
+    {
+      "id": 82,
+      "chapter": "dom",
+      "description": "Функция находит на странице все ссылкы (<kbd>a</kbd>), которые находятся в абзаце (<kbd>p</kbd>) с классом <kbd>abc</kbd> и являются дочерними для блоков (<kbd>div</kbd>) с классом <kbd>dv</kbd>. Для найденных элементов добавляется класс <kbd>pwned</kbd>.",
+      "method": "addClassBySelector"
     }
   ]
 }

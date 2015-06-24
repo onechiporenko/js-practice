@@ -8,7 +8,9 @@ export default Ember.View.extend({
 
     formUpdating: Ember.B,
 
-    tableProcessing: Ember.B
+    tableProcessing: Ember.B,
+
+    addClassBySelector: Ember.B
 
   }
 
