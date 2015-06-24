@@ -6,7 +6,9 @@ export default Ember.View.extend({
 
     addCustomClass: Ember.B,
 
-    formUpdating: Ember.B
+    formUpdating: Ember.B,
+
+    tableProcessing: Ember.B
 
   }
 

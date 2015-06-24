@@ -479,6 +479,12 @@
       "chapter": "dom",
       "description": "Функция находит на странице элементы форм и делает следующее: <ul><li>кнопкам добавляет класс <kbd>btn</kbd></li> <li>radio-button'ам добавляет атрибут <kbd>rel</kbd> со значением <kbd>my-cool-radio</kbd></li><li>у checkbox'ов забирает класс <kbd>chbx</kbd></li></ul>",
       "method": "formUpdating"
+    },
+    {
+      "id": 81,
+      "chapter": "dom",
+      "description": "Функция находит на странице таблицы и для каждой четной строчки тела таблицы добавляет класс <kbd>c1</kbd>, а для нечетной - <kbd>c2</kbd>.",
+      "method": "tableProcessing"
     }
   ]
 }
