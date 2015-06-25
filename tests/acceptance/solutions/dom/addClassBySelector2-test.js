@@ -4,7 +4,7 @@ import startApp from '../../../helpers/start-app';
 
 var application;
 
-module('solutions.dom.addClassBySelector', {
+module('solutions.dom.addClassBySelector2', {
 
   beforeEach: function() {
     application = startApp();
@@ -19,11 +19,11 @@ module('solutions.dom.addClassBySelector', {
 test('test1', function(assert) {
   visit('/solutions/dom');
   andThen(function() {
-    click('button.addClassBySelector');
+    click('button.addClassBySelector2');
     andThen(function () {
-      var a = $('.addClassBySelector a.aa.pwned');
-      assert.equal(a.length, 2, 'К нужным ссылкам добавлен класс');
-      assert.equal($('.addClassBySelector a.pwned').length, 2, 'К нужным ссылкам добавлен класс');
+      var i = $('.addClassBySelector2 i.aa.bfg');
+      assert.equal(i.length, 2, 'К нужным i добавлен класс');
+      assert.equal($('.addClassBySelector2 i.bfg').length, 2, 'К нужным i добавлен класс');
     });
   });
 });

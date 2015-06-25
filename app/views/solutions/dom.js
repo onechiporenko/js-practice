@@ -10,7 +10,11 @@ export default Ember.View.extend({
 
     tableProcessing: Ember.B,
 
-    addClassBySelector: Ember.B
+    addClassBySelector: Ember.B,
+
+    addClassBySelector2: function () {
+      $('.addClassBySelector2').find('ul b + i, ol b + i').addClass('bfg');
+    }
 
   }
 
