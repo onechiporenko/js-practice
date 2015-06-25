@@ -495,8 +495,14 @@
     {
       "id": 83,
       "chapter": "dom",
-      "description": "Функция находит на странице все тэги <kbd>b</kbd>, соседние к <kbd>i</kbd> и вложенные в списки, и добавляет к ним класс <kbd>bfg</kbd>.",
+      "description": "Функция находит на странице все тэги <kbd>i</kbd>, соседние к <kbd>b</kbd> и вложенные в списки, и добавляет к ним класс <kbd>bfg</kbd>.",
       "method": "addClassBySelector2"
+    },
+    {
+      "id": 84,
+      "chapter": "dom",
+      "description": "Функция находит на странице все абзацы (<kbd>p</kbd>), родственные к тегам заголовков (<kbd>h1..h6</kbd>) добавляет к ним класс <kbd>egm</kbd>.",
+      "method": "addClassBySelector3"
     }
   ]
 }

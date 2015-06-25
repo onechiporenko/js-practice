@@ -12,7 +12,9 @@ export default Ember.View.extend({
 
     addClassBySelector: Ember.B,
 
-    addClassBySelector2: Ember.B
+    addClassBySelector2: Ember.B,
+
+    addClassBySelector3: Ember.B
 
   }
 
