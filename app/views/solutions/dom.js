@@ -14,7 +14,9 @@ export default Ember.View.extend({
 
     addClassBySelector2: Ember.B,
 
-    addClassBySelector3: Ember.B
+    addClassBySelector3: Ember.B,
+
+    checkClassesCount: Ember.B
 
   }
 
