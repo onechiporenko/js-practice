@@ -6,6 +6,10 @@ export default Ember.Controller.extend({
 
   execSecondParameter: Ember.B,
 
-  callIfExists: Ember.B
+  callIfExists: Ember.B,
+
+  customCall: Ember.B,
+
+  customCallAfter: Ember.B
 
 });

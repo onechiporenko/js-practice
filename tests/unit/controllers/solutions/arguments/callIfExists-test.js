@@ -18,7 +18,7 @@ test('test1', function(assert) {
   Ember.run(function () {
     controller.callIfExists('min', 1, 2, 3, 4);
   });
-  assert.equal(Math.min.calledOnce, true, `Math.mix called`);
+  assert.equal(Math.min.calledOnce, true, `Math.min called`);
   assert.equal(Math.min.calledWith(1, 2, 3, 4), true, 'with valid arguments');
 });
 
