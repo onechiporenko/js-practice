@@ -12,9 +12,7 @@ export default Ember.View.extend({
 
     addClassBySelector: Ember.B,
 
-    addClassBySelector2: function () {
-      $('.addClassBySelector2').find('ul b + i, ol b + i').addClass('bfg');
-    }
+    addClassBySelector2: Ember.B
 
   }
 
