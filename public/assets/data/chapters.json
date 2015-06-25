@@ -21,6 +21,11 @@
       "section": "controllers"
     },
     {
+      "id": "regexp",
+      "name": "RegExp",
+      "section": "controllers"
+    },
+    {
       "id": "ajax",
       "name": "Ajax",
       "section": "controllers"
