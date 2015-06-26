@@ -6,6 +6,12 @@ export default Ember.Controller.extend({
 
   removeFirst: Ember.B,
 
-  removeLast: Ember.B
+  removeLast: Ember.B,
+
+  parseList: Ember.B,
+
+  parseList2: Ember.B,
+
+  parsePhones: Ember.B
 
 });
