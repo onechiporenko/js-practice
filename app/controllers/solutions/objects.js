@@ -20,6 +20,8 @@ export default Ember.Controller.extend({
 
   getCommonKeys2: Ember.B,
 
-  checkIsNone: Ember.B
+  checkIsNone: Ember.B,
+
+  useContext: Ember.B
 
 });

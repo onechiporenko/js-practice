@@ -1,5 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
+
 moduleFor('controller:solutions/arguments', 'solutions.arguments.callIfExists', {
 
   beforeEach: function () {

@@ -32,7 +32,7 @@ test('test1', function(assert) {
       assert.equal($('.formUpdating input[type=radio][rel=my-cool-radio]').length, radio.length, 'с требуемым атрибутом');
 
       assert.ok(buttons.length > 0, 'Кнопки существуют');
-      assert.equal(buttons.not('.btn').length, 0, 'с классом btn')
+      assert.equal(buttons.not('.btn').length, 0, 'с классом btn');
     });
   });
 });
