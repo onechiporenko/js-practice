@@ -9,7 +9,7 @@ test('test1', function(assert) {
 
 test('test2', function(assert) {
   var controller = this.subject();
-  assert.deepEqual(controller.getEvenLines([[1,2],[3,4]]), [3,4], `([[1,2],[3,4]]) -> [3,4]`);
+  assert.deepEqual(controller.getEvenLines([[1,2],[3,4]]), [[3,4]], `([[1,2],[3,4]]) -> [[3,4]]`);
 });
 
 test('test3', function(assert) {
