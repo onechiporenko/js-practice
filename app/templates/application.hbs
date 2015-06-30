@@ -1,8 +1,9 @@
 <div class="container">
-  <h2>Разделы</h2>
+<h2>Разделы</h2>
   {{#link-to 'tasks' (query-params chapter='') class="badge"}}Все задачи{{/link-to}}
   {{#each model as |chapter index|}}
     {{#link-to 'tasks' (query-params chapter=chapter.id) class="badge"}}{{chapter.name}}{{/link-to}}
   {{/each}}
+  <p></p>
   {{outlet}}
 </div>
