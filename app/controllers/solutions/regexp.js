@@ -12,6 +12,12 @@ export default Ember.Controller.extend({
 
   parseList2: Ember.B,
 
-  parsePhones: Ember.B
+  parsePhones: Ember.B,
+
+  sortArrayBySubstring: Ember.B,
+
+  swapWords: Ember.B,
+
+  replaceWithIndex: Ember.B
 
 });
