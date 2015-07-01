@@ -10,10 +10,10 @@ test('test1', function(assert) {
 
 test('test2', function(assert) {
   var controller = this.subject();
-  assert.equal(controller.getAsciiCodesSum(''), '', `('') -> ''`);
+  assert.equal(controller.sortByAsciiCode(''), '', `('') -> ''`);
 });
 
 test('test3', function(assert) {
   var controller = this.subject();
-  assert.equal(controller.getAsciiCodesSum('}|{'), '{|}', `('}|{') -> '{|}'`);
+  assert.equal(controller.sortByAsciiCode('}|{'), '{|}', `('}|{') -> '{|}'`);
 });
