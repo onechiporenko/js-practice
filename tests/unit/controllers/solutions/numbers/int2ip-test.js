@@ -4,7 +4,7 @@ moduleFor('controller:solutions/numbers', 'solutions.numbers.int2ip', {});
 
 test('test1', function(assert) {
   var controller = this.subject();
-  assert.equal(controller.int2ip, `(0) -> '0.0.0.0'`);
+  assert.equal(controller.int2ip(0), `(0) -> '0.0.0.0'`);
 });
 
 test('test2', function(assert) {

@@ -4,7 +4,7 @@ moduleFor('controller:solutions/numbers', 'solutions.numbers.getLine', {});
 
 test('test1', function(assert) {
   var controller = this.subject();
-  assert.equal(controller.getLine(1,1,1,1).toFixed(3), '1.000', '(1,1,1,1) -> 1');
+  assert.equal(controller.getLine(0,1,0,1).toFixed(3), '1.000', '(1,1,1,1) -> 1');
 });
 
 test('test2', function(assert) {

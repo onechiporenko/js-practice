@@ -19,12 +19,12 @@ test('test3', function(assert) {
 
 test('test4', function(assert) {
   var controller = this.subject();
-  assert.equal(controller.checkInRange(0, 1, 3), true, `(0, 1, 3) -> false`);
+  assert.equal(controller.checkInRange(0, 1, 3), false, `(0, 1, 3) -> false`);
 });
 
 test('test5', function(assert) {
   var controller = this.subject();
-  assert.equal(controller.checkInRange(4, 1, 3), true, `(4, 1, 3) -> false`);
+  assert.equal(controller.checkInRange(4, 1, 3), false, `(4, 1, 3) -> false`);
 });
 
 test('test6', function(assert) {
