@@ -44,6 +44,8 @@ export default Ember.Controller.extend({
 
   getSumOfMultiDimensionalArray: Ember.B,
 
-  getEdgesSum: Ember.B
+  getEdgesSum: Ember.B,
+
+  getInnerSum: Ember.B
 
 });
