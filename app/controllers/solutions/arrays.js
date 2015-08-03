@@ -38,6 +38,12 @@ export default Ember.Controller.extend({
 
   vector2matrix: Ember.B,
 
-  makeArray: Ember.B
+  makeArray: Ember.B,
+
+  getSumForPrimaryDiagonalOfMultiDimensionArray: Ember.B,
+
+  getSumOfMultiDimensionalArray: Ember.B,
+
+  getEdgesSum: Ember.B
 
 });
