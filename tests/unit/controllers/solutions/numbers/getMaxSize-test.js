@@ -4,7 +4,7 @@ moduleFor('controller:solutions/numbers', 'solutions.numbers.getMaxSize', {});
 
 test('test1', function(assert) {
   var controller = this.subject();
-  assert.equal(controller.getMaxSize(10000), '9.76 KB', `(10000) -> '9.76 KB'`);
+  assert.equal(controller.getMaxSize(10000), '9.77 KB', `(10000) -> '9.77 KB'`);
 });
 
 test('test2', function(assert) {
