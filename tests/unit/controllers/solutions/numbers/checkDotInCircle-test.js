@@ -9,7 +9,7 @@ test('test1', function(assert) {
 
 test('test2', function(assert) {
   var controller = this.subject();
-  assert.equal(controller.checkDotInCircle(1,1,1), true, `(1,1,1) -> true`);
+  assert.equal(controller.checkDotInCircle(1,1,1), false, `(1,1,1) -> false`);
 });
 
 test('test3', function(assert) {
@@ -29,12 +29,12 @@ test('test5', function(assert) {
 
 test('test6', function(assert) {
   var controller = this.subject();
-  assert.equal(controller.checkDotInCircle(1,-1,1), true, `(1,-1,1) -> true`);
+  assert.equal(controller.checkDotInCircle(1,-1,1), false, `(1,-1,1) -> false`);
 });
 
 test('test7', function(assert) {
   var controller = this.subject();
-  assert.equal(controller.checkDotInCircle(0,1,0), true, `(0,1,0) -> false`);
+  assert.equal(controller.checkDotInCircle(0,1,0), false, `(0,1,0) -> false`);
 });
 
 test('test8', function(assert) {

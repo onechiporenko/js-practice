@@ -4,7 +4,7 @@ moduleFor('controller:solutions/numbers', 'solutions.numbers.checkIsPrime', {});
 
 test('test1', function(assert) {
   var controller = this.subject();
-  assert.equal(controller.checkIsPrime(1), true, '(1) -> true');
+  assert.equal(controller.checkIsPrime(1), false, '(1) -> false');
 });
 
 test('test2', function(assert) {
@@ -29,10 +29,10 @@ test('test5', function(assert) {
 
 test('test6', function(assert) {
   var controller = this.subject();
-  assert.equal(controller.checkIsPrime(17), false, '(100) -> false');
+  assert.equal(controller.checkIsPrime(17), true, '(17) -> true');
 });
 
 test('test7', function(assert) {
   var controller = this.subject();
-  assert.equal(controller.checkIsPrime(349), false, '(349) -> true');
+  assert.equal(controller.checkIsPrime(349), true, '(349) -> true');
 });
