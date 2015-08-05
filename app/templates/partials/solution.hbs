@@ -2,7 +2,7 @@
 {{! `chapter` - Chapter }}
 
 {{#if task.chapter.renderAsComponent}}
-  <pre><code class="javascript">{{component task.chapter.componentPath methodToRender=task.method}}</code></pre>
+  <pre><code class="language-javascript">{{component task.chapter.componentPath methodToRender=task.method}}</code></pre>
 {{else}}
-  <pre><code class="javascript">{{controller-method this task.chapter.id task.chapter.section task.method}}</code></pre>
+  <pre><code class="language-javascript">{{controller-method this task.chapter.id task.chapter.section task.method}}</code></pre>
 {{/if}}
