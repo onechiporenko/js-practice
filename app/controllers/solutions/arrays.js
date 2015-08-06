@@ -48,6 +48,8 @@ export default Ember.Controller.extend({
 
   getInnerSum: Ember.B,
 
-  getTopsSum: Ember.B
+  getTopsSum: Ember.B,
+
+  getInnerDiagonalsSum: Ember.B
 
 });
