@@ -26,7 +26,7 @@ test('test2', function(assert) {
   Ember.run(function () {
     controller.sendPostData({});
   });
-  assert.equal($.mockjax.mockedAjaxCalls().length, 1, 'One ajax-call');
-  assert.equal($.mockjax.mockedAjaxCalls()[0].type, "POST", 'with type POST');
-  assert.deepEqual($.mockjax.mockedAjaxCalls()[0].data, {}, `request data is {}`);
+  assert.equal($.mockjax.mockedAjaxCalls().length, 2, 'One ajax-call');
+  assert.equal($.mockjax.mockedAjaxCalls()[1].type, "POST", 'with type POST');
+  assert.deepEqual($.mockjax.mockedAjaxCalls()[1].data, {}, `request data is {}`);
 });

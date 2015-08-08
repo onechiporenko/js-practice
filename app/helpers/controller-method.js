@@ -20,4 +20,4 @@ export function controllerMethod(params/*, hash*/) {
   return method ? method.toString() : '';
 }
 
-export default Ember.HTMLBars.makeBoundHelper(controllerMethod);
+export default Ember.Helper.helper(controllerMethod);

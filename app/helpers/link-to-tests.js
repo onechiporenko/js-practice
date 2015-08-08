@@ -6,4 +6,4 @@ export function linkToTests(params/*, hash*/) {
   return '<a href="/tests/index.html?module=solutions.' + chapter + '.' + methodName + '&nojshint&&nocontainer" target="_blank">Проверить тесты</a>';
 }
 
-export default Ember.HTMLBars.makeBoundHelper(linkToTests);
+export default Ember.Helper.helper(linkToTests);
