@@ -7,13 +7,13 @@ export default Ember.ArrayController.extend({
   chapter: null,
 
   needs: Ember.computed(function () {
-    return this.store.all('chapter').filterBy('section', 'controllers').map(chapter => {
+    return this.store.peekAll('chapter').filterBy('section', 'controllers').map(chapter => {
       return 'solutions/' + chapter.get('id');
     });
   }),
 
   chapters: Ember.computed(function () {
-    return this.store.all('chapter');
+    return this.store.peekAll('chapter');
   }),
 
   chapterModel: Ember.computed('chapter', function () {
