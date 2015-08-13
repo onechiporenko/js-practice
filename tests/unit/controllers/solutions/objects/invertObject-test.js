@@ -16,3 +16,8 @@ test('test3', function(assert) {
   var controller = this.subject();
   assert.deepEqual(controller.invertObject({a: 1, b: 2, c: 1}), {'1': 'c', '2': 'b'}, `({a: 1, b: 2, c: 1}) -> {'1': 'c', '2': 'b'}`);
 });
+
+test('test4', function(assert) {
+  var controller = this.subject();
+  assert.deepEqual(controller.invertObject({a: 1, b: 2, c: 1, '1': 'c'}), {'1': 'c', '2': 'b', 'c': '1'}, `({a: 1, b: 2, c: 1, '1': 'c'}) -> {'1': 'c', '2': 'b', 'c': '1'}`);
+});
