@@ -1,7 +1,7 @@
 import Ember from 'ember';
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('controller:solutions/perf', 'solutions.perf.searchObjectPairs', {
+moduleFor('controller:solutions/perf', 'solutions.perf.searchObjectPairs2', {
 
   beforeEach: function() {
     this.c1 = generateArray(10000);
@@ -37,7 +37,38 @@ function shuffle(o) {
   return o;
 }
 
-test('test1', function(assert) {
+test('test1', function (assert) {
+
+  this.c1 = [{
+      keyField: [
+        {f: 1}, {f: 2}
+      ]
+    },
+    {
+      keyField: [
+        {f: 3}, {f: 4}
+      ]
+    }];
+  this.c2 = [{
+    keyField: [
+      {f: 3}, {f: 4}
+    ]
+  },
+    {
+      keyField: [
+        {f: 1}, {f: 2}
+      ]
+    }];
+
+  var controller = this.subject();
+  var ret1 = controller.searchObjectPairs(this.c1, this.c2);
+  var ret2 = controller.searchObjectPairs2(this.c1, this.c2);
+
+  assert.deepEqual(ret1, ret2, `Проверка корректности работы с небольшими массивами`);
+
+});
+
+test('test2', function(assert) {
   var controller = this.subject();
 
   var t1 = new Date().getTime();
