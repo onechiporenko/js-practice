@@ -49,6 +49,11 @@
       "id": "date",
       "name": "Date",
       "section": "controllers"
+    },
+    {
+      "id": "perf",
+      "name": "Performance",
+      "section": "controllers"
     }
   ]
 }
