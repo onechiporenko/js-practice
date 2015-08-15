@@ -26,6 +26,11 @@
       "section": "controllers"
     },
     {
+      "id": "bits",
+      "name": "Побитовые операции",
+      "section": "controllers"
+    },
+    {
       "id": "ajax",
       "name": "Ajax",
       "section": "controllers"

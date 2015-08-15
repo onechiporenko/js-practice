@@ -18,6 +18,8 @@ export default Ember.Controller.extend({
 
   swapWords: Ember.B,
 
-  replaceWithIndex: Ember.B
+  replaceWithIndex: Ember.B,
+
+  checkNumberBinaryFormWithRegexp: Ember.B
 
 });

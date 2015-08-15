@@ -30,6 +30,8 @@ export default Ember.Controller.extend({
 
   checkDotInCircle: Ember.B,
 
-  checkAllDigitsUnique: Ember.B
+  checkAllDigitsUnique: Ember.B,
+
+  checkSumForPower2: Ember.B
 
 });

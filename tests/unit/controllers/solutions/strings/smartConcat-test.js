@@ -9,7 +9,7 @@ test('test1', function(assert) {
 
 test('test2', function(assert) {
   var controller = this.subject();
-  assert.equal(controller.smartConcat('1234567', 'abcde'), '2a4c6e7', `('1234567', 'abcde') -> '2a4c6e7'`);
+  assert.equal(controller.smartConcat('1234567', 'abcde'), '2a4c6e', `('1234567', 'abcde') -> '2a4c6e'`);
 });
 
 test('test3', function(assert) {
