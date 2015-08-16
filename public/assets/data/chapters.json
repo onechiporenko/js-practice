@@ -31,6 +31,11 @@
       "section": "controllers"
     },
     {
+      "id": "logic",
+      "name": "Логические выражения",
+      "section": "controllers"
+    },
+    {
       "id": "ajax",
       "name": "Ajax",
       "section": "controllers"

@@ -671,6 +671,402 @@
       "chapter": "regexp",
       "description": "Функция принимает один параметр (натуральное число) и проверяет, являет ли его двоичное представление \"зебру\" вида <kbd>10101010, 1010101, 101, 1010</kbd> и т.д. При решении задачи, двоичное представление числа перевести в строку и проверять регулярным выражением.",
       "method": "checkNumberBinaryFormWithRegexp"
+    },
+    {
+      "id": 113,
+      "chapter": "logic",
+      "description": "Функция принимает два параметра (булевого типа) и возвращает результат, соответствующий таблице истинности:",
+      "additionalHtml": {
+        "items": [
+          {
+            "tag": "table",
+            "inner": {
+              "head": [ "A", "B", "Result" ],
+              "body": [
+                [ true, true, true ],
+                [ true, false, false ],
+                [ false, true, false ],
+                [ false, false, true ]
+              ]
+            }
+          }
+        ]
+      },
+      "method": "logicF1"
+    },
+    {
+      "id": 114,
+      "chapter": "logic",
+      "description": "Функция принимает два параметра (булевого типа) и возвращает результат, соответствующий таблице истинности:",
+      "additionalHtml": {
+        "items": [
+          {
+            "tag": "table",
+            "inner": {
+              "head": [ "A", "B", "Result" ],
+              "body": [
+                [true,true,false],
+                [true,false,true],
+                [false,true,true],
+                [false,false,true]
+              ]
+            }
+          }
+        ]
+      },
+      "method": "logicF2"
+    },
+    {
+      "id": 115,
+      "chapter": "logic",
+      "description": "Функция принимает два параметра (булевого типа) и возвращает результат, соответствующий таблице истинности:",
+      "additionalHtml": {
+        "items": [
+          {
+            "tag": "table",
+            "inner": {
+              "head": [ "A", "B", "Result" ],
+              "body": [
+                [true,true,false],
+                [true,false,true],
+                [false,true,false],
+                [false,false,false]
+              ]
+            }
+          }
+        ]
+      },
+      "method": "logicF3"
+    },
+    {
+      "id": 116,
+      "chapter": "logic",
+      "description": "Функция принимает два параметра (булевого типа) и возвращает результат, соответствующий таблице истинности:",
+      "additionalHtml": {
+        "items": [
+          {
+            "tag": "table",
+            "inner": {
+              "head": [ "A", "B", "Result" ],
+              "body": [
+                [true,true,true],
+                [true,false,false],
+                [false,true,true],
+                [false,false,true]
+              ]
+            }
+          }
+        ]
+      },
+      "method": "logicF4"
+    },
+    {
+      "id": 117,
+      "chapter": "logic",
+      "description": "Функция принимает три параметра (булевого типа) и возвращает результат, соответствующий таблице истинности:",
+      "additionalHtml": {
+        "items": [
+          {
+            "tag": "table",
+            "inner": {
+              "head": [ "A", "B", "C", "Result" ],
+              "body": [
+                [true,true,true,false],
+                [true,true,false,false],
+                [true,false,true,false],
+                [true,false,false,false],
+                [false,true,true,true],
+                [false,true,false,true],
+                [false,false,true,true],
+                [false,false,false,false]
+              ]
+            }
+          }
+        ]
+      },
+      "method": "logicF5"
+    },
+    {
+      "id": 118,
+      "chapter": "logic",
+      "description": "Функция принимает три параметра (булевого типа) и возвращает результат, соответствующий таблице истинности:",
+      "additionalHtml": {
+        "items": [
+          {
+            "tag": "table",
+            "inner": {
+              "head": [ "A", "B", "C", "Result" ],
+              "body": [
+                [true,true,true,false],
+                [true,true,false,false],
+                [true,false,true,false],
+                [true,false,false,true],
+                [false,true,true,false],
+                [false,true,false,false],
+                [false,false,true,false],
+                [false,false,false,false]
+              ]
+            }
+          }
+        ]
+      },
+      "method": "logicF6"
+    },
+    {
+      "id": 119,
+      "chapter": "logic",
+      "description": "Функция принимает три параметра (булевого типа) и возвращает результат, соответствующий таблице истинности:",
+      "additionalHtml": {
+        "items": [
+          {
+            "tag": "table",
+            "inner": {
+              "head": [ "A", "B", "C", "Result" ],
+              "body": [
+                [true,true,true,false],
+                [true,true,false,false],
+                [true,false,true,true],
+                [true,false,false,false],
+                [false,true,true,true],
+                [false,true,false,true],
+                [false,false,true,true],
+                [false,false,false,true]
+              ]
+            }
+          }
+        ]
+      },
+      "method": "logicF7"
+    },
+    {
+      "id": 120,
+      "chapter": "logic",
+      "description": "Функция принимает три параметра (булевого типа) и возвращает результат, соответствующий таблице истинности:",
+      "additionalHtml": {
+        "items": [
+          {
+            "tag": "table",
+            "inner": {
+              "head": [ "A", "B", "C", "Result" ],
+              "body": [
+                [true,true,true,true],
+                [true,true,false,true],
+                [true,false,true,true],
+                [true,false,false,true],
+                [false,true,true,true],
+                [false,true,false,false],
+                [false,false,true,true],
+                [false,false,false,true]
+              ]
+            }
+          }
+        ]
+      },
+      "method": "logicF8"
+    },
+    {
+      "id": 121,
+      "chapter": "logic",
+      "description": "Функция принимает четыре параметра (булевого типа) и возвращает результат, соответствующий таблице истинности:",
+      "additionalHtml": {
+        "items": [
+          {
+            "tag": "table",
+            "inner": {
+              "head": [ "A", "B", "C", "D", "Result" ],
+              "body": [
+                [true, true, true, true, false],
+                [true, true, true, false, false],
+                [true, true, false, true, false],
+                [true, true, false, false, false],
+                [true, false, true, true, false],
+                [true, false, true, false, true],
+                [true, false, false, true, false],
+                [true, false, false, false, false],
+                [false, true, true, true, false],
+                [false, true, true, false, false],
+                [false, true, false, true, false],
+                [false, true, false, false, false],
+                [false, false, true, true, false],
+                [false, false, true, false, false],
+                [false, false, false, true, false],
+                [false, false, false, false, false]
+              ]
+            }
+          }
+        ]
+      },
+      "method": "logicF9"
+    },
+    {
+      "id": 122,
+      "chapter": "logic",
+      "description": "Функция принимает четыре параметра (булевого типа) и возвращает результат, соответствующий таблице истинности:",
+      "additionalHtml": {
+        "items": [
+          {
+            "tag": "table",
+            "inner": {
+              "head": [ "A", "B", "C", "D", "Result" ],
+              "body": [
+                [true, true, true, true, true],
+                [true, true, true, false, true],
+                [true, true, false, true, true],
+                [true, true, false, false, true],
+                [true, false, true, true, true],
+                [true, false, true, false, true],
+                [true, false, false, true, true],
+                [true, false, false, false, true],
+                [false, true, true, true, true],
+                [false, true, true, false, true],
+                [false, true, false, true, true],
+                [false, true, false, false, false],
+                [false, false, true, true, true],
+                [false, false, true, false, false],
+                [false, false, false, true, true],
+                [false, false, false, false, false]
+              ]
+            }
+          }
+        ]
+      },
+      "method": "logicF10"
+    },
+    {
+      "id": 123,
+      "chapter": "logic",
+      "description": "Функция принимает четыре параметра (булевого типа) и возвращает результат, соответствующий таблице истинности:",
+      "additionalHtml": {
+        "items": [
+          {
+            "tag": "table",
+            "inner": {
+              "head": [ "A", "B", "C", "D", "Result" ],
+              "body": [
+                [true, true, true, true, true],
+                [true, true, true, false, true],
+                [true, true, false, true, false],
+                [true, true, false, false, true],
+                [true, false, true, true, false],
+                [true, false, true, false, true],
+                [true, false, false, true, false],
+                [true, false, false, false, true],
+                [false, true, true, true, true],
+                [false, true, true, false, true],
+                [false, true, false, true, true],
+                [false, true, false, false, true],
+                [false, false, true, true, true],
+                [false, false, true, false, true],
+                [false, false, false, true, true],
+                [false, false, false, false, true]
+              ]
+            }
+          }
+        ]
+      },
+      "method": "logicF11"
+    },
+    {
+      "id": 124,
+      "chapter": "logic",
+      "description": "Функция принимает четыре параметра (булевого типа) и возвращает результат, соответствующий таблице истинности:",
+      "additionalHtml": {
+        "items": [
+          {
+            "tag": "table",
+            "inner": {
+              "head": [ "A", "B", "C", "D", "Result" ],
+              "body": [
+                [true, true, true, true, true],
+                [true, true, true, false, true],
+                [true, true, false, true, true],
+                [true, true, false, false, true],
+                [true, false, true, true, true],
+                [true, false, true, false, false],
+                [true, false, false, true, false],
+                [true, false, false, false, false],
+                [false, true, true, true, true],
+                [false, true, true, false, false],
+                [false, true, false, true, false],
+                [false, true, false, false, false],
+                [false, false, true, true, true],
+                [false, false, true, false, false],
+                [false, false, false, true, false],
+                [false, false, false, false, false]
+              ]
+            }
+          }
+        ]
+      },
+      "method": "logicF12"
+    },
+    {
+      "id": 125,
+      "chapter": "logic",
+      "description": "Функция принимает четыре параметра (булевого типа) и возвращает результат, соответствующий таблице истинности:",
+      "additionalHtml": {
+        "items": [
+          {
+            "tag": "table",
+            "inner": {
+              "head": [ "A", "B", "C", "D", "Result" ],
+              "body": [
+                [true, true, true, true, true],
+                [true, true, true, false, false],
+                [true, true, false, true, false],
+                [true, true, false, false, false],
+                [true, false, true, true, true],
+                [true, false, true, false, true],
+                [true, false, false, true, true],
+                [true, false, false, false, true],
+                [false, true, true, true, true],
+                [false, true, true, false, true],
+                [false, true, false, true, true],
+                [false, true, false, false, true],
+                [false, false, true, true, true],
+                [false, false, true, false, false],
+                [false, false, false, true, false],
+                [false, false, false, false, false]
+              ]
+            }
+          }
+        ]
+      },
+      "method": "logicF13"
+    },
+    {
+      "id": 126,
+      "chapter": "logic",
+      "description": "Функция принимает четыре параметра (булевого типа) и возвращает результат, соответствующий таблице истинности:",
+      "additionalHtml": {
+        "items": [
+          {
+            "tag": "table",
+            "inner": {
+              "head": [ "A", "B", "C", "D", "Result" ],
+              "body": [
+                [true, true, true, true, false],
+                [true, true, true, false, true],
+                [true, true, false, true, true],
+                [true, true, false, false, false],
+                [true, false, true, true, true],
+                [true, false, true, false, false],
+                [true, false, false, true, false],
+                [true, false, false, false, true],
+                [false, true, true, true, true],
+                [false, true, true, false, false],
+                [false, true, false, true, false],
+                [false, true, false, false, true],
+                [false, false, true, true, false],
+                [false, false, true, false, true],
+                [false, false, false, true, true],
+                [false, false, false, false, false]
+              ]
+            }
+          }
+        ]
+      },
+      "method": "logicF14"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {{! `task` - Task }}
 {{! `chapter` - Chapter }}
 
-<p>{{{task.description}}}</p>
+<p>{{{output-description task}}}</p>
 {{#unless chapter}}
   <p>Раздел: {{#link-to 'tasks' (query-params chapter=task.chapter.id)}}{{task.chapter.name}}{{/link-to}}</p>
 {{/unless}}

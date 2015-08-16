@@ -6,6 +6,8 @@ export default DS.Model.extend({
 
   description: DS.attr('string'),
 
-  method: DS.attr('string')
+  method: DS.attr('string'),
+
+  additionalHtml: DS.attr()
 
 });
