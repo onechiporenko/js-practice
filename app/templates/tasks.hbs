@@ -1,7 +1,7 @@
 <h3>
   {{#link-to "index"}}/{{/link-to}}
   {{#if chapterModel.name}}
-    {{#link-to 'tasks' (query-params chapter='')}}Все задачи{{/link-to}} / {{chapterModel.name}} ({{filteredTasks.length}})
+    {{chapterModel.name}} ({{filteredTasks.length}})
   {{else}}
     Все задачи ({{filteredTasks.length}})
   {{/if}}
