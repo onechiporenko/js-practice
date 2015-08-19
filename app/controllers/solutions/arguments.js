@@ -12,6 +12,12 @@ export default Ember.Controller.extend({
 
   customCallAfter: Ember.B,
 
-  callTwoFunctionsIfExist: Ember.B
+  callTwoFunctionsIfExist: Ember.B,
+
+  callWithReversedList: Ember.B,
+
+  callArrayOfFuncs: Ember.B,
+
+  callWithAllIfFunc: Ember.B
 
 });
