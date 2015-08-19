@@ -12,7 +12,7 @@ moduleFor('controller:solutions/arguments', 'solutions.arguments.customCallAfter
 
 });
 
-test('test1', function(assert) {
+test('test1 (Math.max, 1, 2, 3, 4)', function(assert) {
   var controller = this.subject();
   Ember.run(function () {
     controller.customCallAfter(Math.max, 1, 2, 3, 4);
@@ -21,7 +21,7 @@ test('test1', function(assert) {
   assert.equal(Math.max.calledWith(1,2,3,4), true, `with valid arguments`);
 });
 
-test('test2', function(assert) {
+test('test2 (1, 2, Math.max, 3, 4)', function(assert) {
   var controller = this.subject();
   Ember.run(function () {
     controller.customCallAfter(1, 2, Math.max, 3, 4);
@@ -30,7 +30,7 @@ test('test2', function(assert) {
   assert.equal(Math.max.calledWith(3,4), true, `with valid arguments`);
 });
 
-test('test3', function(assert) {
+test('test3 (1, 2, 3, 4, Math.max)', function(assert) {
   var controller = this.subject();
   Ember.run(function () {
     controller.customCallAfter(1, 2, 3, 4, Math.max);

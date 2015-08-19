@@ -10,6 +10,8 @@ export default Ember.Controller.extend({
 
   customCall: Ember.B,
 
-  customCallAfter: Ember.B
+  customCallAfter: Ember.B,
+
+  callTwoFunctionsIfExist: Ember.B
 
 });
