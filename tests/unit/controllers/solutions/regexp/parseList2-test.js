@@ -39,7 +39,7 @@ test('test7', function(assert) {
 
 test('test8', function(assert) {
   var controller = this.subject();
-  assert.deepEqual(controller.parseList2('abc[1-2]d[2-3].efg'), ['abc1d2.efg', 'abc1d3.efg', 'abc2d1.efg', 'abc2d3.efg'], `('abc[1-2]d[2-3].efg') -> ['abc1d2.efg', 'abc1d3.efg', 'abc2d1.efg', 'abc2d3.efg']`);
+  assert.deepEqual(controller.parseList2('abc[1-2]d[2-3].efg'), ['abc1d2.efg', 'abc1d3.efg', 'abc2d2.efg', 'abc2d3.efg'], `('abc[1-2]d[2-3].efg') -> ['abc1d2.efg', 'abc1d3.efg', 'abc2d2.efg', 'abc2d3.efg']`);
 });
 
 test('test9', function(assert) {
