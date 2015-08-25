@@ -9,7 +9,7 @@ test('test1', function(assert) {
 
 test('test2', function(assert) {
   var controller = this.subject();
-  assert.deepEqual(controller.parseList('abc[1-2]d.efg'), ['abc1d.efg', 'abc2d.efg'], `('abc[1-2]d.efg') -> ['abc1d.efg', 'abc2d.efg']`);
+  assert.deepEqual(controller.parseList('ab1c[1-2]d.efg'), ['ab1c1d.efg', 'ab1c2d.efg'], `('ab1c[1-2]d.efg') -> ['ab1c1d.efg', 'ab1c2d.efg']`);
 });
 
 test('test3', function(assert) {
