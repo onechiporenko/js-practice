@@ -44,5 +44,52 @@ test('test8', function(assert) {
 
 test('test9', function(assert) {
   var controller = this.subject();
-  assert.deepEqual(controller.parseList2('abc[1-2]d[2-3].efg[3-4]'), ['abc1d2.efg3', 'abc1d3.efg3', 'abc2d1.efg3', 'abc2d3.efg3', 'abc1d2.efg4', 'abc1d3.efg4', 'abc2d1.efg4', 'abc2d3.efg4'], `('abc[1-2]d[2-3].efg[3-4]') -> ['abc1d2.efg3', 'abc1d3.efg3', 'abc2d1.efg3', 'abc2d3.efg3', 'abc1d2.efg4', 'abc1d3.efg4', 'abc2d1.efg4', 'abc2d3.efg4']`);
+  assert.deepEqual(controller.parseList2('abc[1-2]d[2-3].efg[3-4]'), ["abc1d2.efg3",
+    "abc1d2.efg4",
+    "abc1d3.efg3",
+    "abc1d3.efg4",
+    "abc2d2.efg3",
+    "abc2d2.efg4",
+    "abc2d3.efg3",
+    "abc2d3.efg4"], `('abc[1-2]d[2-3].efg[3-4]') -> ["abc1d2.efg3",
+  "abc1d2.efg4",
+  "abc1d3.efg3",
+  "abc1d3.efg4",
+  "abc2d2.efg3",
+  "abc2d2.efg4",
+  "abc2d3.efg3",
+  "abc2d3.efg4"]`);
+});
+
+test('test10', function(assert) {
+  var controller = this.subject();
+  assert.deepEqual(controller.parseList2('abc[1-2]d[2-3].efg[3-4][1-2]'), ["abc1d2.efg31","abc1d2.efg32",
+    "abc1d2.efg41",
+    "abc1d2.efg42",
+    "abc1d3.efg31",
+    "abc1d3.efg32",
+    "abc1d3.efg41",
+    "abc1d3.efg42",
+    "abc2d2.efg31",
+    "abc2d2.efg32",
+    "abc2d2.efg41",
+    "abc2d2.efg42",
+    "abc2d3.efg31",
+    "abc2d3.efg32",
+    "abc2d3.efg41",
+    "abc2d3.efg42"], `('abc[1-2]d[2-3].efg[3-4][1-2]') -> ["abc1d2.efg31","abc1d2.efg32",
+    "abc1d2.efg41",
+    "abc1d2.efg42",
+    "abc1d3.efg31",
+    "abc1d3.efg32",
+    "abc1d3.efg41",
+    "abc1d3.efg42",
+    "abc2d2.efg31",
+    "abc2d2.efg32",
+    "abc2d2.efg41",
+    "abc2d2.efg42",
+    "abc2d3.efg31",
+    "abc2d3.efg32",
+    "abc2d3.efg41",
+    "abc2d3.efg42"]`);
 });
