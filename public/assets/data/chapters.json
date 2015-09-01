@@ -64,6 +64,11 @@
       "id": "perf",
       "name": "Performance",
       "section": "controllers"
+    },
+    {
+      "id": "misc",
+      "name": "Misc",
+      "section": "controllers"
     }
   ]
 }

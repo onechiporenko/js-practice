@@ -20,6 +20,14 @@ export default Ember.Controller.extend({
 
   replaceWithIndex: Ember.B,
 
-  checkNumberBinaryFormWithRegexp: Ember.B
+  checkNumberBinaryFormWithRegexp: Ember.B,
+
+  replaceDigits2: Ember.B,
+
+  replacePlusMinus: Ember.B,
+
+  checkIp: Ember.B,
+
+  getCoordinates: Ember.B
 
 });
