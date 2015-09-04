@@ -6,4 +6,4 @@
   <p>Раздел: {{#link-to 'tasks' (query-params chapter=task.chapter.id)}}{{task.chapter.name}}{{/link-to}}</p>
 {{/unless}}
 <p>Решение должно быть в: <kbd>app/{{task.chapter.section}}/solutions/{{task.chapter.id}}.js#{{task.method}}</kbd></p>
-<p>Тесты: <kbd>tests/unit/{{task.chapter.section}}/solutions/{{task.chapter.id}}/{{task.method}}-test.js</kbd> ({{{link-to-tests task.chapter.id task.method}}})</p>
+<p>Тесты: <kbd>tests/{{task.chapter.testsType}}/{{task.chapter.section}}/solutions/{{task.chapter.id}}/{{task.method}}-test.js</kbd> ({{{link-to-tests task.chapter.id task.method}}})</p>

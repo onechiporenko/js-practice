@@ -9,6 +9,8 @@ export default DS.Model.extend({
 
   section: DS.attr('string'),
 
+  testsType: DS.attr('string', {defaultValue: 'unit'}),
+
   renderAsComponent: DS.attr('boolean', {defaultValue: false}),
 
   componentPath: Ember.computed('renderAsComponent', function() {
