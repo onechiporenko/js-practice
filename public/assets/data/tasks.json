@@ -1095,7 +1095,7 @@
     {
       "id": 131,
       "chapter": "misc",
-      "description": "Описать функцию func, вызов которой в виде <code>func(a)(b)</code> вернет сумму аргументов a и b.",
+      "description": "Описать функцию smartSum, вызов которой в виде <code>func(a)(b)</code> вернет сумму аргументов a и b.",
       "method": "smartSum"
     },
     {
@@ -1127,6 +1127,18 @@
       "chapter": "regexp",
       "description": "Функция принимает один параметр (строку), находит в ней подстроки вида <code>{12,35}</code> и возвращает массив объектов вида: <code>[{x: 12, y: 35}]</code>. Пример: параметр - <code>'abc {1,2} cdef.{33, 46}'</code>, функция вернет - <code>[{x: 1, y: 2}, {x: 33, y: 46}]</code>.",
       "method": "getCoordinates"
+    },
+    {
+      "id": 137,
+      "chapter": "misc",
+      "description": "Описать функцию smartSumWithChains, вызов которой в виде <code>func(a).sum(b)</code>, <code>func(a).c1.c2.c3.sum(b)</code>, <code>func(a).c1.c2.sum(b)</code> или любой другой комбинации c1, c2, c3, вернет сумму a + b.",
+      "method": "smartSumWithChains"
+    },
+    {
+      "id": 138,
+      "chapter": "misc",
+      "description": "Описать функцию getSetter, которая получает на входе объект и имя одного из его полей и возвращает <code>setter</code> для этого поля или <code>null</code>.",
+      "method": "getSetter"
     }
   ]
 }
