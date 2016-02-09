@@ -1,7 +1,7 @@
 <div class="container">
 <h2>Разделы</h2>
   {{#each model as |chapter index|}}
-    {{#link-to 'tasks' (query-params chapter=chapter.id) class="badge"}}{{chapter.name}}{{/link-to}}
+    {{#link-to 'tasks' (query-params chapter=chapter.id) class="badge" activeClass="active progress-bar-info"}}{{chapter.name}}{{/link-to}}
   {{/each}}
   <p></p>
   {{outlet}}

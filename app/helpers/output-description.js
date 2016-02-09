@@ -29,7 +29,7 @@ export function outputDescription(params/*, hash*/) {
   var output = task.get('description');
   if (Array.isArray(html)) {
     html.forEach(function(obj) {
-      if (obj.tag == 'table') {
+      if (obj.tag === 'table') {
         output += parseTable(obj.inner);
       }
     });
