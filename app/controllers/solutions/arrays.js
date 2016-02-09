@@ -50,6 +50,10 @@ export default Ember.Controller.extend({
 
   getTopsSum: Ember.B,
 
-  getInnerDiagonalsSum: Ember.B
+  getInnerDiagonalsSum: Ember.B,
+
+  getKeyValueLinks: Ember.B,
+
+  multiToOne: Ember.B
 
 });
