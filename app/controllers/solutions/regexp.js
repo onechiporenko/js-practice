@@ -30,8 +30,6 @@ export default Ember.Controller.extend({
 
   getCoordinates: Ember.B,
 
-  escapeRegex: function (str) {
-    return str.replace(/[\\^$.*+?()[\]{}|]/g, '\\$&');
-  }
+  escapeRegex: Ember.B
 
 });

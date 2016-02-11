@@ -60,6 +60,12 @@ export default Ember.Controller.extend({
 
   getMaxDepth: Ember.B,
 
-  insertAt: Ember.B
+  insertAt: Ember.B,
+
+  rotateRight: Ember.B,
+
+  rotateLeft: Ember.B,
+
+  rotate180: Ember.B
 
 });
