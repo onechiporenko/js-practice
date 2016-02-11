@@ -40,6 +40,14 @@ export default Ember.Controller.extend({
 
   getLongest: Ember.B,
 
-  smartConcat: Ember.B
+  smartConcat: Ember.B,
+
+  compareVersions: Ember.B,
+
+  customPad: Ember.B,
+
+  customPadLeft: Ember.B,
+
+  customPadRight: Ember.B
 
 });

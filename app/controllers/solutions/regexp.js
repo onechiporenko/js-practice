@@ -28,6 +28,10 @@ export default Ember.Controller.extend({
 
   checkIp: Ember.B,
 
-  getCoordinates: Ember.B
+  getCoordinates: Ember.B,
+
+  escapeRegex: function (str) {
+    return str.replace(/[\\^$.*+?()[\]{}|]/g, '\\$&');
+  }
 
 });

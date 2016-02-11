@@ -22,6 +22,8 @@ export default Ember.Controller.extend({
 
   checkIsNone: Ember.B,
 
-  useContext: Ember.B
+  useContext: Ember.B,
+
+  pickByClb: Ember.B
 
 });

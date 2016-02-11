@@ -54,6 +54,12 @@ export default Ember.Controller.extend({
 
   getKeyValueLinks: Ember.B,
 
-  multiToOne: Ember.B
+  multiToOne: Ember.B,
+
+  multiToOne2: Ember.B,
+
+  getMaxDepth: Ember.B,
+
+  insertAt: Ember.B
 
 });
