@@ -4,673 +4,785 @@
       "id": 1,
       "chapter": "strings",
       "description": "Функция принимает один аргумент (строку) и возвращает объект с полями, равными каждому символу в этой строке. Значениями полей являются количества вхождения каждого символа в строку. Пример: для строки <code>abca</code> функция должна вернуть объект <code>{a: 2, b: 1, c: 1}</code>.",
-      "method": "str2obj"
+      "method": "str2obj",
+      "difficulty": 1
     },
     {
       "id": 2,
       "chapter": "strings",
       "description": "Функция принимает один аргумент (строку) и проверяет, является ли одна палиндромом (возвращает <code>true</code>, если строка палиндром, <code>false</code> - если нет).",
-      "method": "isPalindrome"
+      "method": "isPalindrome",
+      "difficulty": 2
     },
     {
       "id": 3,
       "chapter": "strings",
       "description": "Функция принимает один аргумент (строку) и возвращает ее копию с вырезанными всеми пробельными символами (\\n, \\t, \\r, ' ').",
-      "method": "superTrim"
+      "method": "superTrim",
+      "difficulty": 1
     },
     {
       "id": 4,
       "chapter": "strings",
       "description": "Функция принимает один аргумент (строку) и возвращает кол-во уникальных символов в ней. Пример: строка <code>abca</code>, функция вернет 3.",
-      "method": "getUniqueCharsNumber"
+      "method": "getUniqueCharsNumber",
+      "difficulty": 2
     },
     {
       "id": 5,
       "chapter": "strings",
       "description": "Функция принимает один аргумент (строку) и возвращает строку, состоящую из символов, которые стоят на четных позициях строки-аргумента. Пример: строка <code>abcdef</code>, функция вернет <code>bdf</code>.",
-      "method": "getEvenChars"
+      "method": "getEvenChars",
+      "difficulty": 2
     },
     {
       "id": 6,
       "chapter": "strings",
       "description": "Функция принимает один аргумент (строку) и возвращает сумму кодов ее символов. В условии данной задачи аргументом может быть строка только из ascii-символов.",
-      "method": "getAsciiCodesSum"
+      "method": "getAsciiCodesSum",
+      "difficulty": 2
     },
     {
       "id": 7,
       "chapter": "strings",
       "description": "Функция принимает один аргумент (строку) и возвращает ее копию, отсортированную по возрастанию ascii-кодов ее символов. В условии данной задачи аргументом может быть строка только из ascii-символов. Пример: строка <code>dacbef</code>, функция вернет <code>abcdef</code>.",
-      "method": "sortByAsciiCode"
+      "method": "sortByAsciiCode",
+      "difficulty": 2
     },
     {
       "id": 8,
       "chapter": "strings",
       "description": "Функция принимает два аргумента (строки), которые являются путями к файлам в файловой системе, и возвращает их общую часть. Пример: строка1 - <code>/path1/path2/path4.txt</code>, строка2 - <code>/path1/path2/path3.txt</code>, функция вернет <code>/path1/path2/</code>. В условии данной задачи у файла может быть только имя без расширения (<code>abc</code>), а может быть расширение, но без имени (<code>.htaccess</code>).",
-      "method": "getCommonPath"
+      "method": "getCommonPath",
+      "difficulty": 3
     },
     {
       "id": 9,
       "chapter": "strings",
       "description": "Функция принимает один аргумент (строку), которая является url и возвращает число, которое отвечает тому, домен какого уровня содержится в url. Пример: url - <code>http://google.com/</code>, функция вернет <code>2</code>. В условии данной задачи url может не содержать закрывающую косую черту, может заканчиваться на точку (должна быть проигнорирована), в качестве протокола может быть http/https.",
-      "method": "getDomainLevel"
+      "method": "getDomainLevel",
+      "difficulty": 3
     },
     {
       "id": 10,
       "chapter": "strings",
       "description": "Функция принимает один аргумент (строку), которая является номером телефона (любой наш моб. номер) и возвращает объект вида с частями этого номера. Пример: номер - <code>+380661234567</code>, функция вернет <code>{c: '+38', o: '066', p: '1234567'}</code>. В условии данной задачи необходимо учесть, что номер может содержать пробельные символы (это не только один пробел), скобки и знак минус.",
-      "method": "parsePhone"
+      "method": "parsePhone",
+      "difficulty": 2
     },
     {
       "id": 11,
       "chapter": "strings",
       "description": "Функция принимает два аргумента (строку и число) и возвращает массив из частей строки размера, равного второму параметру функции. Если длина строки меньше, чем размер части, то вернуть массив из одного элемента (равному всей строке). Если длина строки не кратна размеру части, то последний элемент массива должен содержать остаток строки. Пример: строка <code>abcab</code>, число 2, функция вернет <code>['ab', 'ca', 'b']</code>.",
-      "method": "getChunks"
+      "method": "getChunks",
+      "difficulty": 2
     },
     {
       "id": 12,
       "chapter": "strings",
       "description": "Функция принимает один аргумент (строку) и возвращает ее копию, записанную в обратном порядке. В условии данной задачи строка-аргумент может состоять только из ascii-символов.",
-      "method": "getReversed"
+      "method": "getReversed",
+      "difficulty": 2
     },
     {
       "id": 13,
       "chapter": "strings",
       "description": "Функция принимает два аргумента (строки) и возвращает количество вхождений второго аргумента в первый. Пример: строка1 - <code>abcabc</code>, строка2 - <code>ab</code>, функция вернет 2. Если один из аргументов является пустой строкой, функция возвращает 0.",
-      "method": "getEntriesCount"
+      "method": "getEntriesCount",
+      "difficulty": 2
     },
     {
       "id": 14,
       "chapter": "strings",
       "description": "Функция принимает два аргумента (строки) и проверяет, начинается ли первый аргумент со второго (возвращает <code>true</code>, если начинается, <code>false</code> - иначе). Если один из агрументов пустая строка, функция возвращает <code>false</code>.",
-      "method": "startWith"
+      "method": "startWith",
+      "difficulty": 1
     },
     {
       "id": 15,
       "chapter": "strings",
       "description": "Функция принимает два аргумента (строки) и проверяет, являются ли они равными, если не учитывать их регистр (возвращает <code>true</code>, если равны, <code>false</code> - иначе). В условии данной задачи строки-аргументы могут состоять только из ascii-символов. Пример: строка1 - <code>aBcDeF</code>, строка2 - <code>AbCdEf</code>, функция вернет <code>true</code>.",
-      "method": "isEqualIgnoreCase"
+      "method": "isEqualIgnoreCase",
+      "difficulty": 1
     },
     {
       "id": 16,
       "chapter": "strings",
       "description": "Функция принимает один аргумент (строку) и проверяет, что она является однострочной (возвращает <code>true</code>, если является, <code>false</code> - иначе).",
-      "method": "isSingleLine"
+      "method": "isSingleLine",
+      "difficulty": 1
     },
     {
       "id": 17,
       "chapter": "strings",
       "description": "Функция принимает два аргумента (строки), которые являются доменами (без протокола, пути, параметров и т.д), и возвращает их общую часть. Пример: строка1 - <code>adds.google.com</code>, строка2 - <code>maps.google.com</code>, функция возвращает <code>google.com</code>.",
-      "method": "getCommonDomain"
+      "method": "getCommonDomain",
+      "difficulty": 3
     },
     {
       "id": 18,
       "chapter": "strings",
       "description": "Функция принимает три параметра (строка, строка, число) и возвращает копию первой строки, в которую после символа на позиции, равной третьему параметру, вставляется вторая строка. Пример: строка1 - <code>abcfg</code>, строка2 - <code>de</code>, число - <code>3</code>, функция вернет <code>abcdefg</code>.",
-      "method": "smartInsert"
+      "method": "smartInsert",
+      "difficulty": 3
     },
     {
       "id": 19,
       "chapter": "strings",
       "description": "Функция принимает любое кол-во аргументов (строк) и возвращает самую длинную из них. Если аргументов передано не было, то возвращает <code>null</code>. Если у нескольких строк одинаковая длина и она максимальная, то вернуть последнюю из них.",
-      "method": "getLongest"
+      "method": "getLongest",
+      "difficulty": 3
     },
     {
       "id": 20,
       "chapter": "strings",
       "description": "Функция принимает два параметра (строки) и возвращает строку, которая состоит из четных символов первого аргумента и нечетных символов второго аргумента, идущие один за другим. Если аргументы разной длины, то нужные символы более длинной строки дописываются в строку-результат. Пример: строка1 - <code>abcde</code>, строка2 - <code>1234567</code>, функция вернет <code>b1d357</code>.",
-      "method": "smartConcat"
+      "method": "smartConcat",
+      "difficulty": 3
     },
     {
       "id": 21,
       "chapter": "objects",
       "description": "Функция принимает два параметра (объект и массив строк) и возвращает новый объект, состоящий из полей, перечисленных в массиве. Если в исходном объекте нет поля с именем, которое есть в массиве, то оно игнорируется. Пример: объект - <code>{a: 1, b: 2, c: 3, d: 4}</code>, массив - <code>['a', 'b', 'e']</code>, функция вернет - <code>{a: 1, b: 2}</code>.",
-      "method": "getCustomProperties"
+      "method": "getCustomProperties",
+      "difficulty": 1
     },
     {
       "id": 22,
       "chapter": "objects",
       "description": "Функция принимает два параметра (объекты) и возвращает массив, состоящий из полей, которые есть в обоих параметрах. Пример: объект1 - <code>{a: 1, b: 2, c: 3, d: 4}</code>, объект2 - <code>{a: 4, c: 2, e: 7}</code>, функция вернет - <code>['a', 'c']</code>.",
-      "method": "getCommonKeys"
+      "method": "getCommonKeys",
+      "difficulty": 2
     },
     {
       "id": 23,
       "chapter": "arrays",
       "description": "Функция принимает один параметр (вектор чисел) и возвращает их сумму. Если массив пустой, то возвращает <code>null</code>.",
-      "method": "getSum"
+      "method": "getSum",
+      "difficulty": 1
     },
     {
       "id": 24,
       "chapter": "arrays",
       "description": "Функция приминает один параметр (вектор строк) и возвращает их конкатенацию. Если массив пустой, то возвращает <code>''</code>.",
-      "method": "getConcat"
+      "method": "getConcat",
+      "difficulty": 1
     },
     {
       "id": 25,
       "chapter": "arrays",
       "description": "Функция принимает один параметр (вектор) и возвращает другой массив, состоящий из элементов первого массива, стоящих на четных позициях массива-аргумента.",
-      "method": "getEvenElements"
+      "method": "getEvenElements",
+      "difficulty": 2
     },
     {
       "id": 26,
       "chapter": "arrays",
       "description": "Функция принимает один параметр (матрицу N*N) и возвращает вектор длинной N, состоящий их элементов матрицы, стоящих на главной диагонали.",
-      "method": "getMainDiagonal"
+      "method": "getMainDiagonal",
+      "difficulty": 2
     },
     {
       "id": 27,
       "chapter": "arrays",
       "description": "Функция принимает один параметр (матрицу N*N) и возвращает вектор длинной N, состоящий их элементов матрицы, стоящих на побочной диагонали.",
-      "method": "getSecondaryDiagonal"
+      "method": "getSecondaryDiagonal",
+      "difficulty": 2
     },
     {
       "id": 28,
       "chapter": "arrays",
       "description": "Функция принимает один параметр (матрицу N*M) и возвращает матрицу, состоящую из четных строк исходной.",
-      "method": "getEvenLines"
+      "method": "getEvenLines",
+      "difficulty": 2
     },
     {
       "id": 29,
       "chapter": "arrays",
       "description": "Функция принимает один параметр (матрицу N*M) и возвращает матрицу, состоящую из нечетных столбцов исходной.",
-      "method": "getOddColumns"
+      "method": "getOddColumns",
+      "difficulty": 2
     },
     {
       "id": 30,
       "chapter": "arrays",
       "description": "Функция принимает один параметр (вектор чисел) и возвращает индекс последнего максимального из них. Если массив пустой, вернуть <code>-1</code>.",
-      "method": "getIndexOfMax"
+      "method": "getIndexOfMax",
+      "difficulty": 1
     },
     {
       "id": 31,
       "chapter": "arrays",
       "description": "Функция принимает один параметр (вектор) и возвращает новый массив, состоящий из элементов исходного массива стоящих на четных позициях, но взятых в обратном порядке. Пример: вектор - <code>[1,2,3,4,5,6,7]</code>, функция вернет - <code>[6,4,2]</code>.",
-      "method": "getEvenIndexedElementReversed"
+      "method": "getEvenIndexedElementReversed",
+      "difficulty": 2
     },
     {
       "id": 32,
       "chapter": "arrays",
       "description": "Функция принимает два параметра (вектор строк, строка) и возвращает новый массив из элементов исходного, у которых есть подстрока, равная второму параметру функции.",
-      "method": "getWithSubstr"
+      "method": "getWithSubstr",
+      "difficulty": 2
     },
     {
       "id": 33,
       "chapter": "arrays",
       "description": "Функция принимает один параметр (матрица чисел N*N, N - четное) и возвращает новую матрицу размером N/2 * N и состоящую по четным строчкам из четных элементов, а по нечетным строчкам из нечетных элементов исходной матрицы. Пример: матрица - <code>[[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]</code>, функция вернет - <code>[[1,3],[6,8],[9,11],[14,16]]</code>.",
-      "method": "getOddEvenElements"
+      "method": "getOddEvenElements",
+      "difficulty": 3
     },
     {
       "id": 34,
       "chapter": "arrays",
       "description": "Функция принимает один параметр (матрица чисел N*M) и возвращает вектор, который состоит из всех элементов матрицы, если ее обходить змейкой, начиная с [0,0]. Пример: матрица - <code>[[1,2,3],[4,5,6],[7,8,9]]</code>, функция вернет - <code>[1,2,3,6,5,4,7,8,9]</code>.",
-      "method": "getSnake00"
+      "method": "getSnake00",
+      "difficulty": 4
     },
     {
       "id": 35,
       "chapter": "arrays",
       "description": "Функция принимает один параметр (матрица чисел N*M) и возвращает вектор, который состоит из всех элементов матрицы, если ее обходить змейкой, начиная с [N,M]. Пример: матрица - <code>[[1,2,3],[4,5,6],[7,8,9]]</code>, функция вернет - <code>[9,8,7,4,5,6,3,2,1]</code>.",
-      "method": "getSnakeNM"
+      "method": "getSnakeNM",
+      "difficulty": 4
     },
     {
       "id": 36,
       "chapter": "arrays",
       "description": "Функция принимает один параметр (матрица чисел N*M) и возвращает вектор, который состоит из всех элементов матрицы, если ее обходить змейкой, начиная с [0,M]. Пример: матрица - <code>[[1,2,3],[4,5,6],[7,8,9]]</code>, функция вернет - <code>[3,2,1,4,5,6,9,8,7]</code>.",
-      "method": "getSnake0M"
+      "method": "getSnake0M",
+      "difficulty": 4
     },
     {
       "id": 37,
       "chapter": "arrays",
       "description": "Функция принимает один параметр (матрица чисел N*M) и возвращает вектор, который состоит из всех элементов матрицы, если ее обходить змейкой, начиная с [N,0]. Пример: матрица - <code>[[1,2,3],[4,5,6],[7,8,9]]</code>, функция вернет - <code>[7,8,9,6,5,4,1,2,3]</code>.",
-      "method": "getSnakeN0"
+      "method": "getSnakeN0",
+      "difficulty": 4
     },
     {
       "id": 38,
       "chapter": "arrays",
       "description": "Функция принимает два параметра (векторы с числами) и возвращает вектор, элементы которого - суммы соответствующих элементов векторов-параметров. Пример: вектор1 - <code>[1,2,3]</code>, вектор2 - <code>[1,2,3,5]</code>, функция вернет - <code>[2,4,6,5]</code>.",
-      "method": "getVectorsSum"
+      "method": "getVectorsSum",
+      "difficulty": 3
     },
     {
       "id": 39,
       "chapter": "arrays",
       "description": "Функция принимает два параметра (векторы с числами) и возвращает вектор, элементы которого - суммы соответствующих элементов векторов-параметров. Если длина массивов разная, то суммирование продолжается с начала короткого массива. Пример: вектор1 - <code>[1,1,1,1,1,1,1]</code>, вектор2 - <code>[1,2,3]</code>, функция вернет - <code>[2,3,4,2,3,4,2]</code>.",
-      "method": "getVectorsSum2"
+      "method": "getVectorsSum2",
+      "difficulty": 3
     },
     {
       "id": 40,
       "chapter": "arrays",
       "description": "Функция принимает один параметр (вектор размера N^2, где N - натуральное число) и возвращает матрицу N*N. Пример: вектор - <code>[1,2,3,4,5,6,7,8,9]</code>, функция вернет - <code>[[1,2,3],[4,5,6],[7,8,9]]</code>.",
-      "method": "vector2matrix"
+      "method": "vector2matrix",
+      "difficulty": 3
     },
     {
       "id": 41,
       "chapter": "ajax",
       "description": "Функция принимает один параметр (объект) и отправляет его методом <code>POST</code> по ссылке <code>/tests/myscript</code>.",
-      "method": "sendPostData"
+      "method": "sendPostData",
+      "difficulty": 2
     },
     {
       "id": 42,
       "chapter": "numbers",
       "description": "Функция принимает любое количество параметров (чисел) и возвращает самое большое из них (<code>Math.max</code> использовать нельзя). Если агрументов не передано, функция должна вернуть <code>null</code>.",
-      "method": "getMax"
+      "method": "getMax",
+      "difficulty": 2
     },
     {
       "id": 43,
       "chapter": "numbers",
       "description": "Функция принимает два параметра (любое положительное число и любое натуральное число) и возвращает корень первого параметра степени второго параметра. Пример: число1 - <code>125</code>, число2 - <code>3</code>, функция вернет - <code>5</code>.",
-      "method": "getCustomRoot"
+      "method": "getCustomRoot",
+      "difficulty": 2
     },
     {
       "id": 44,
       "chapter": "objects",
       "description": "Функция принимает два параметра (объект и строку). Строка является собой запись вида <code>a.b.c</code> (пустой быть не может), а объект в качестве полей может содержать другие объекты (вложенность произвольная). Функция возвращает значение поля объекта по пути, равному второму параметру функции (<code>.</code> является разделителем между вложенными объектами). Если такого пути нет, функция должна вернуть <code>null</code>. Пример: объект - <code>{a: {b: {c: 123'}}}</code>, строка - <code>'a.b.c'</code>, функция вернет - <code>123</code>.",
-      "method": "getCustomPath"
+      "method": "getCustomPath",
+      "difficulty": 3
     },
     {
       "id": 45,
       "chapter": "objects",
       "description": "Функция принимает один параметр (объект) и возвращает новый объект, ключами которого являются значения из первого объекта, а значениями - ключи из первого объекта. Пример: объект - <code>{a: 123, b: 2, c: 123}</code>, функция вернет - <code>{'123': 'c', '2': 'b'}</code>. Обратить внимание, что совпадающие значения должны перезатираться самым последним ключом.",
-      "method": "invertObject"
+      "method": "invertObject",
+      "difficulty": 3
     },
     {
       "id": 46,
       "chapter": "objects",
       "description": "Функция принимает один параметр (объект) и возвращает новый объект, ключами которого являются значения из первого объекта, а значениями - ключи из первого объекта. Пример: объект - <code>{a: 123, b: 2, c: 123}</code>, функция вернет - <code>{'123': ['a', 'c'], '2': 'b'}</code>. Обратить внимание, что совпадающие значения не должны перезатираться (ключи записываются в массив).",
-      "method": "invertObjectWithoutOverride"
+      "method": "invertObjectWithoutOverride",
+      "difficulty": 3
     },
     {
       "id": 47,
       "chapter": "objects",
       "description": "Функция принимает один параметр (объект) и возвращает массив с именами методов, которые есть у этого объекта. Пример: объект - <code>{a: 1, b: function() {}, c: 'abc', d: function () {} }</code>, функция вернет - <code>['b', 'd']</code>.",
-      "method": "getFunctionNames"
+      "method": "getFunctionNames",
+      "difficulty": 2
     },
     {
       "id": 48,
       "chapter": "objects",
       "description": "Функция принимает один параметр (объект). В зависимости от его типа возвращает следующее: строка - string, число - number, логическое значение - boolean, массив - array, объект - object (для объекта-даты - date, для объекта-ошибки - error), функция - function, null - null, ничего - undefined, RegExp - regexp.",
-      "method": "smartGetType"
+      "method": "smartGetType",
+      "difficulty": 3
     },
     {
       "id": 49,
       "chapter": "objects",
       "description": "Функция принимает один параметр (объект) и возвращает количество его собственных полей.",
-      "method": "getOwnPropertiesCount"
+      "method": "getOwnPropertiesCount",
+      "difficulty": 2
     },
     {
       "id": 50,
       "chapter": "objects",
       "description": "Функция принимает произвольное кол-во параметров (объекты) и возвращает имена полей, которые есть у каждого объекта.",
-      "method": "getCommonKeys2"
+      "method": "getCommonKeys2",
+      "difficulty": 2
     },
     {
       "id": 51,
       "chapter": "objects",
       "description": "Функция принимает один параметр (любой тип) и возвращает <code>true</code>, если он <code>null</code> или <code>undefined</code>.",
-      "method": "checkIsNone"
+      "method": "checkIsNone",
+      "difficulty": 1
     },
     {
       "id": 52,
       "chapter": "numbers",
       "description": "Функция принимает два параметра (любое рациональное число и любое натуральное число) и возвращает целое число, которое ближе всего к первому параметру и кратно второму.",
-      "method": "getNearestNumber"
+      "method": "getNearestNumber",
+      "difficulty": 2
     },
     {
       "id": 53,
       "chapter": "numbers",
       "description": "Функция принимает три параметра (числа) и возвращает <code>true</code>, если первый параметр попадает в диапазон между вторым и третьим (сравнение не строгое), иначе возвращает <code>false</code>.",
-      "method": "checkInRange"
+      "method": "checkInRange",
+      "difficulty": 1
     },
     {
       "id": 54,
       "chapter": "numbers",
       "description": "Функция принимает один параметр (строку), который является IP-адресом и возвращает его числовой эквивалент.",
-      "method": "ip2int"
+      "method": "ip2int",
+      "difficulty": 3
     },
     {
       "id": 55,
       "chapter": "numbers",
       "description": "Функция принимает один параметр (число в диапазоне 0..4294967295) и возвращает его в формате IP-адреса.",
-      "method": "int2ip"
+      "method": "int2ip",
+      "difficulty": 3
     },
     {
       "id": 56,
       "chapter": "numbers",
       "description": "Функция принимает два параметра (строки с IP-адресами) и возвращает массив IP-адресов, которые находятся между ними (включая граничные адреса).",
-      "method": "generateIpsRange"
+      "method": "generateIpsRange",
+      "difficulty": 4
     },
     {
       "id": 57,
       "chapter": "arrays",
       "description": "Функция принимает один параметр (любого типа) и, если он массив, то возвращает его без изменений, иначе - \"оборачивает\" его в массив. Пример1: параметр - <code>1234</code>, функция вернет - <code>[1234]</code>. Пример2: параметр - <code>[1234]</code>, функция вернет - <code>[1234]</code>.",
-      "method": "makeArray"
+      "method": "makeArray",
+      "difficulty": 1
     },
     {
       "id": 58,
       "chapter": "numbers",
       "description": "Функция принимает 4 параметра (числа), которые являются парами координат точек <code>x1, y1, x2, y2</code>, и вычисляет расстояние между этими точками.",
-      "method": "getLine"
+      "method": "getLine",
+      "difficulty": 2
     },
     {
       "id": 59,
       "chapter": "numbers",
       "description": "Функция принимает 2 параметра (числа, которые являются степенями 2) и возвращает модуль разности этих степеней. Пример: число1 - <code>64</code>, число2 - <code>1024</code>, функция вернет <code>4</code>.",
-      "method": "getSizeDiff"
+      "method": "getSizeDiff",
+      "difficulty": 2
     },
     {
       "id": 60,
       "chapter": "numbers",
       "description": "Функция принимает 1 параметр (число) и возвращает <code>true</code>, если оно простое, <code>false</code> - иначе.",
-      "method": "checkIsPrime"
+      "method": "checkIsPrime",
+      "difficulty": 3
     },
     {
       "id": 61,
       "chapter": "numbers",
       "description": "Функция принимает 2 параметра (целые числа) и возвращает <code>true</code>, если первое является какой-то степенью второго числа, <code>false</code> - иначе.",
-      "method": "checkPow"
+      "method": "checkPow",
+      "difficulty": 3
     },
     {
       "id": 62,
       "chapter": "numbers",
       "description": "Функция принимает 1 параметр (число - кол-во байт) и возвращает максимально возможную единицу измерения для этого числа (но не больше PB). Точность - два знака после запятой. Пример: число - <code>10000</code>, функция вернет - <code>9.77 KB</code>.",
-      "method": "getMaxSize"
+      "method": "getMaxSize",
+      "difficulty": 3
     },
     {
       "id": 63,
       "chapter": "numbers",
       "description": "Функция принимает 3 параметра (натуральные числа) и возвращает <code>true</code>, если треугольник с такими сторонами является прямоугольным, <code>false</code> - иначе.",
-      "method": "checkTriangle"
+      "method": "checkTriangle",
+      "difficulty": 2
     },
     {
       "id": 64,
       "chapter": "numbers",
       "description": "Функция принимает 3 параметра (числа) и проверяет, входит ли точка с координатами, равными первым двум параметрам в круг с радиусом, равным третьему параметру, и центром в начале координат.",
-      "method": "checkDotInCircle"
+      "method": "checkDotInCircle",
+      "difficulty": 2
     },
     {
       "id": 65,
       "chapter": "numbers",
       "description": "Функция принимает 1 параметр (натуральное число больше 100) и возвращает <code>true</code>, если все его цифры разные, <code>false</code> - иначе.",
-      "method": "checkAllDigitsUnique"
+      "method": "checkAllDigitsUnique",
+      "difficulty": 1
     },
     {
       "id": 66,
       "chapter": "arguments",
       "description": "Функция может принимать любое кол-во параметров (в описании функции не должно быть объявлено никаких параметров) и возвращает <code>true</code>, если передано больше трех параметров, <code>false</code> - иначе.",
-      "method": "checkParametersCount"
+      "method": "checkParametersCount",
+      "difficulty": 1
     },
     {
       "id": 67,
       "chapter": "arguments",
       "description": "Функция может принимать любое кол-во параметров (в описании функции не должно быть объявлено никаких параметров). Если вторым параметром ей передана другая функция, то необходимо выполнить ее.",
-      "method": "execSecondParameter"
+      "method": "execSecondParameter",
+      "difficulty": 1
     },
     {
       "id": 68,
       "chapter": "arguments",
       "description": "Функция может принимать любое кол-во параметров (в описании функции не должно быть объявлено никаких параметров). Если первым параметром передано имя функции, которая есть у объекта <code>Math</code>, ее необходимо выполнить, передав в качестве параметров оставшиеся аргументы функции и вернуть результат ее выполнения. Если такой функции нет, то вернуть <code>null</code>.",
-      "method": "callIfExists"
+      "method": "callIfExists",
+      "difficulty": 2
     },
     {
       "id": 69,
       "chapter": "collections",
       "description": "Функция принимает 3 параметра (массив объектов, строка и mixed) и возвращает <code>true</code>, если у каждого элемента массива есть поле с именем, равным второму параметру, и со значением, равным третьему параметру, <code>false</code> - иначе.",
-      "method": "checkEvery"
+      "method": "checkEvery",
+      "difficulty": 3
     },
     {
       "id": 70,
       "chapter": "collections",
       "description": "Функция принимает 3 параметра (массив объектов, строка и mixed) и возвращает <code>true</code>, если хотя бы у одного элемента массива есть поле с именем, равным второму параметру, и со значением, равным третьему параметру, <code>false</code> - иначе.",
-      "method": "checkSome"
+      "method": "checkSome",
+      "difficulty": 3
     },
     {
       "id": 71,
       "chapter": "collections",
       "description": "Функция принимает 1 параметра (массив элементов разных типов) и возвращает новый массив, состоящий из элементов исходного, но без <code>null</code> и <code>undefined</code>.",
-      "method": "compact"
+      "method": "compact",
+      "difficulty": 2
     },
     {
       "id": 72,
       "chapter": "collections",
       "description": "Функция принимает 3 параметра (массив объектов, строка и mixed) и возвращает новый массив, состоящий из элементов исходного, у которых есть поле с именем, равным второму параметру, и со значением, равным третьему.",
-      "method": "filterByProperty"
+      "method": "filterByProperty",
+      "difficulty": 3
     },
     {
       "id": 73,
       "chapter": "collections",
       "description": "Функция принимает 3 параметра (массив объектов, строка и mixed) и возвращает первый элемент, у которго есть поле с именем, равным второму параметру, и со значением, равным третьему. Если таким элементов нет, то возвращает <code>null</code>.",
-      "method": "findByProperty"
+      "method": "findByProperty",
+      "difficulty": 3
     },
     {
       "id": 74,
       "chapter": "collections",
       "description": "Функция принимает 3 параметра (массив объектов, строка и mixed) и возвращает новый массив, состоящий из элементов исходного, у которых значение поля с именем, равным второму параметру, не равно третьему параметру.",
-      "method": "rejectByProperty"
+      "method": "rejectByProperty",
+      "difficulty": 3
     },
     {
       "id": 75,
       "chapter": "collections",
       "description": "Функция принимает 2 параметра (массив объектов и строку) и возвражает новый массив, состоящий из значений элементов исходного массива в поле с именем, равным второму параметру. Если такого поля у какого-то элемента нет, то брать <code>null</code>. Пример: массив - <code>[{a: 1}, {a: 2}, {}]</code>, строка - <code>'a'</code>, функция вернет - <code>[1,2,null]</code>.",
-      "method": "mapByProperty"
+      "method": "mapByProperty",
+      "difficulty": 3
     },
     {
       "id": 76,
       "chapter": "collections",
       "description": "Функция принимает 3 параметра (массив объектов, строка и mixed) и возвращает новый массив, состоящий из элементов исходного, у которых значение поля с именем, равным второму параметру, ставится равным третьему параметру. Пример: массив - <code>[{a: 1}, {}]</code>, строка - <code>'a'</code>, mixed - <code>123</code>, функция вернет - <code>[{a: 123}, {a: 123}]</code>.",
-      "method": "setEachProperty"
+      "method": "setEachProperty",
+      "difficulty": 3
     },
     {
       "id": 77,
       "chapter": "collections",
       "description": "Функция принимает два параметра (массив объектов и строка) и возвращает новый массив, состоящий из элементов исходного массива, которые отсортированы по возврастанию значения поля с именем, равным второму параметру. В условии данной задачи значениями полей объектов массива могут быть только числа или строки.",
-      "method": "sortByProperty"
+      "method": "sortByProperty",
+      "difficulty": 3
     },
     {
       "id": 78,
       "chapter": "collections",
       "description": "Функция принимает два параметра (массив объектов и строка) и возвращает объект, ключами которого являются уникальные значения поля с именем, равнім второму параметру, а значения - это массивы элементов, у которых это значение поля. Пример: массив - <code>[{a: 1, b: 2}, {a: 1, b: 3}, {a: 2, b: 1}]</code>, строка - <code>'a'</code>, функция вернет - <code>{'1': [{a: 1, b: 2}, {a: 1, b: 3}], '2': [{a: 2, b: 1}]}</code>.",
-      "method": "groupByProperty"
+      "method": "groupByProperty",
+      "difficulty": 3
     },
     {
       "id": 79,
       "chapter": "dom",
       "description": "Функция добавляет класс <code>abc</code> ко всем элементам списков, которые есть на странице.",
-      "method": "addCustomClass"
+      "method": "addCustomClass",
+      "difficulty": 2
     },
     {
       "id": 80,
       "chapter": "dom",
       "description": "Функция находит на странице элементы форм и делает следующее: <ul><li>кнопкам добавляет класс <code>btn</code></li> <li>radio-button'ам добавляет атрибут <code>rel</code> со значением <code>my-cool-radio</code></li><li>у checkbox'ов забирает класс <code>chbx</code></li></ul>",
-      "method": "formUpdating"
+      "method": "formUpdating",
+      "difficulty": 3
     },
     {
       "id": 81,
       "chapter": "dom",
       "description": "Функция находит на странице таблицы и для каждой четной строчки тела таблицы добавляет класс <code>c1</code>, а для нечетной - <code>c2</code>.",
-      "method": "tableProcessing"
+      "method": "tableProcessing",
+      "difficulty": 2
     },
     {
       "id": 82,
       "chapter": "dom",
       "description": "Функция находит на странице все ссылки (<code>a</code>), которые находятся в абзаце (<code>p</code>) с классом <code>abc</code> и являются дочерними для блоков (<code>div</code>) с классом <code>dv</code>. Для найденных элементов добавляется класс <code>pwned</code>.",
-      "method": "addClassBySelector"
+      "method": "addClassBySelector",
+      "difficulty": 3
     },
     {
       "id": 83,
       "chapter": "dom",
       "description": "Функция находит на странице все тэги <code>i</code>, соседние к <code>b</code> и вложенные в списки, и добавляет к ним класс <code>bfg</code>.",
-      "method": "addClassBySelector2"
+      "method": "addClassBySelector2",
+      "difficulty": 1
     },
     {
       "id": 84,
       "chapter": "dom",
       "description": "Функция находит на странице все абзацы (<code>p</code>), родственные к тегам заголовков (<code>h1..h6</code>) добавляет к ним класс <code>egm</code>.",
-      "method": "addClassBySelector3"
+      "method": "addClassBySelector3",
+      "difficulty": 2
     },
     {
       "id": 85,
       "chapter": "arguments",
       "description": "Функция может принимать любое кол-во параметров (в описании функции не должно быть объявлено никаких параметров). Если в качестве первого параметра передана функция, то необходимо вызвать ее с теми параметрами, которые были переданы в исходную.",
-      "method": "customCall"
+      "method": "customCall",
+      "difficulty": 2
     },
     {
       "id": 86,
       "chapter": "arguments",
       "description": "Функция может принимать любое кол-во параметров (в описании функции не должно быть объявлено никаких параметров), одним из которых является функция (обязательно). Необходимо вызвать эту функцию с аргументами, которые в списке параметров идут после этой функции. Пример: параметры - <code>1, 2, Math.max, 3, 4, 5</code>, функция должна вызвать - <code>Math.max(3, 4, 5)</code>.",
-      "method": "customCallAfter"
+      "method": "customCallAfter",
+      "difficulty": 2
     },
     {
       "id": 87,
       "chapter": "dom",
       "description": "Функция находит на странице все элементы, у которых есть два и больше классов, и добавляет им класс <code>zxc</code>.",
-      "method": "checkClassesCount"
+      "method": "checkClassesCount",
+      "difficulty": 3
     },
     {
       "id": 88,
       "chapter": "regexp",
       "description": "Функция принимает один параметр (строку) и возвращает ее копию, где заменяет группы цифр (от 2 до 4) на один символ <code>|</code> (между группами цифр есть хотя бы один \"нецифровой\" символ). Пример: строка - <code>1234a123b12c</code>, функция вернет - <code>|a|b|c</code>. В условии данной задачи аргументом может быть строка только из ascii-символов.",
-      "method": "replaceDigits"
+      "method": "replaceDigits",
+      "difficulty": 2
     },
     {
       "id": 89,
       "chapter": "regexp",
       "description": "Функция принимает один параметр (строку) и возвращает ее копию, где убирает подстроку <code>[..]</code> (между квадратными скобками могут быть буквы в любом регистре, цифры, знак подчеркивания) с начала строки. Пример: строка - <code>[a1_b2]abc[abc]123</code>, функция вернет - <code>abc[abc]123</code>. В условии данной задачи аргументом может быть строка только из ascii-символов.",
-      "method": "removeFirst"
+      "method": "removeFirst",
+      "difficulty": 2
     },
     {
       "id": 90,
       "chapter": "regexp",
       "description": "Функция принимает один параметр (строку) и возвращает ее копию, где убирает заглавные буквы, идущие в конце строки. В условии данной задачи аргументом может быть строка только из ascii-символов.",
-      "method": "removeLast"
+      "method": "removeLast",
+      "difficulty": 2
     },
     {
       "id": 91,
       "chapter": "regexp",
       "description": "Функция принимает один параметр - строку вида <code>abc[2-4]d.efg</code> и возвращает массив строк вида <code>['abc2d.efg', 'abc3d.efg', 'abc4d.efg']</code>. Квадратные скобки с группой цифр могут быть только одни.",
-      "method": "parseList"
+      "method": "parseList",
+      "difficulty": 3
     },
     {
       "id": 92,
       "chapter": "regexp",
       "description": "Функция принимает один параметр - строку вида <code>abc[2-3]d[1-2].efg</code> и возвращает массив строк вида <code>['abc2d1.efg', 'abc2d2.efg', 'abc3d1.efg', 'abc3d2.efg']</code>. Квадратных скобок с группой цифр могут быть сколько угодно.",
-      "method": "parseList2"
+      "method": "parseList2",
+      "difficulty": 4
     },
     {
       "id": 93,
       "chapter": "regexp",
       "description": "Функция принимает один параметр - строку, где есть телефонные номера вида <code>1234567, 123-45-67, 123-4567</code>. Функция возвщащает массив с этими номерами (в том виде, в котором они были в строке). Между номерами телефонов всегда есть какой-то символ.",
-      "method": "parsePhones"
+      "method": "parsePhones",
+      "difficulty": 3
     },
     {
       "id": 94,
       "chapter": "regexp",
       "description": "Функция принимает один параметр - массив строк, в каждой из которых есть одна подстрока вида <code>$ 123.45</code>. Функция возвращает отсортированный по этим подстрокам массив. Пример: массив - <code>['abc $ 12.33', '$4.54', 'abc $6.11 def']</code>, функция вернет - <code>['$4.54', 'abc $6.11 def', 'abc $ 12.33']</code>. Между знаком доллара и числом пробела может и не быть.",
-      "method": "sortArrayBySubstring"
+      "method": "sortArrayBySubstring",
+      "difficulty": 4
     },
     {
       "id": 95,
       "chapter": "regexp",
       "description": "Функция принимает один параметр (строку) и возвращает новую строку, равную исходной, но в которой первое и последнее слово поменяны местами (разделителями между словами считаются любые символы не входящие в диапазоны <code>a-z, A-Z, 0-9</code>).",
-      "method": "swapWords"
+      "method": "swapWords",
+      "difficulty": 3
     },
     {
       "id": 96,
       "chapter": "regexp",
       "description": "Функция принимает один параметр (строку) и заменяет каждое вхождение символа <code>*</code> на его порядковый номер. Пример: строка - <code>a*b*c*</code>, функция вернет - <code>a1b2c3</code>.",
-      "method": "replaceWithIndex"
+      "method": "replaceWithIndex",
+      "difficulty": 3
     },
     {
       "id": 97,
       "chapter": "date",
       "description": "Функция принимает два параметра (числа), которые являются временными метками (в милисекундах) и вычисляет сколько полных лет прошло между ними.",
-      "method": "getYearsDiff"
+      "method": "getYearsDiff",
+      "difficulty": 2
     },
     {
       "id": 98,
       "chapter": "date",
       "description": "Функция принимает два параметра (число и строка). Число являет собой временную метку (в милисекундах), а строка - формат вывода даты. Эта строка может включать следующее: <ul><li>YYYY - год в формате 2015</li><li>YY - год в формате 15</li><li>mm - месяц в формате 01-12 (с ведущим нулем)</li><li>MM - месяц в формате 1-12 (без ведущего 0)</li><li>dd - день в формате 01-31 (с ведущим нулем)</li><li>DD - день в формате 1-31  (без ведущего 0)</li><li>hh - часы в формате 01-24 (с ведущим нулем)</li><li>HH - часы в формате 1-24 (без ведущего 0)</li><li>ll - минуты в формате  01-60 (с ведущим нулем)</li><li>LL - минуты в формате 1-60 (без ведущего 0)</li><li>ss - секунды в формате 01-60 (с ведущим нулем)</li><li>SS - секунды в формате 1-60 (без ведущего 0)</li></ul>Пример: число - <code>1388538605000</code>, строка - <code>'YYYY/mm/dd hh:LL:ss'</code>, функция вернет - <code>2015/01/01 03:10:05</code>.",
-      "method": "formatDate"
+      "method": "formatDate",
+      "difficulty": 3
     },
     {
       "id": 99,
       "chapter": "date",
       "description": "Функция принимает два параметра (числа), которые являются временными метками (в милисекундах) и определяет максимальную (целую) величину разности между ними. Пример: числа - <code>1388538605000</code>, <code>1293840000000</code>, функция вернет - <code>3 years</code>. Необходимо учесть, что не обязательно первое число должно быть больше второго. Доступные суфиксы: <ul><li>год - year/years</li><li>месяц - month/months</li><li>неделя - week/weeks</li><li>день - day/days</li><li>час - hour/hours</li><li>минута - minute/minutes</li><li>секунда - second/seconds</li></ul>",
-      "method": "getTimeAgo"
+      "method": "getTimeAgo",
+      "difficulty": 3
     },
     {
       "id": 100,
       "chapter": "date",
       "description": "Функция принимает один параметр (Date) и определяет попадает ли эта дата на високосный год.",
-      "method": "checkLeapYear"
+      "method": "checkLeapYear",
+      "difficulty": 3
     },
     {
       "id": 101,
       "chapter": "objects",
       "description": "Функция принимает два параметра (объект, функция), выполняет функцию в контексте объекта и возвращает ее результат.",
-      "method": "useContext"
+      "method": "useContext",
+      "difficulty": 1
     },
     {
       "id": 102,
       "chapter": "arrays",
       "description": "Функция принимает многомерный массив чисел (не пустой) N*N*...*N (2x2, 3x3x3, 4x4x4x4 и т.д.) и возвращает сумму элементов его главной диагонали.",
-      "method": "getSumForPrimaryDiagonalOfMultiDimensionArray"
+      "method": "getSumForPrimaryDiagonalOfMultiDimensionArray",
+      "difficulty": 5
     },
     {
       "id": 103,
       "chapter": "arrays",
       "description": "Функция принимает один параметр (непустой многомерный массив чисел) и возвращает сумму всех его элементов.",
-      "method": "getSumOfMultiDimensionalArray"
+      "method": "getSumOfMultiDimensionalArray",
+      "difficulty": 4
     },
     {
       "id": 104,
       "chapter": "arrays",
       "description": "Функция принимает один параметр (массив чисел N*M*K, N > 1, M > 1, K > 1) возвращает сумму элементов на его ребрах.",
-      "method": "getEdgesSum"
+      "method": "getEdgesSum",
+      "difficulty": 3
     },
     {
       "id": 105,
       "chapter": "arrays",
       "description": "Функция принимает один параметр (массив чисел N*M*K, N > 1, M > 1, K > 1) возвращает сумму элементов внутри него (то есть, все кроме граней).",
-      "method": "getInnerSum"
+      "method": "getInnerSum",
+      "difficulty": 3
     },
     {
       "id": 106,
       "chapter": "arrays",
       "description": "Функция принимает один параметр (массив чисел N*M*K, N > 1, M > 1, K > 1) возвращает сумму элементов на его вершинах.",
-      "method": "getTopsSum"
+      "method": "getTopsSum",
+      "difficulty": 2
     },
     {
       "id": 107,
       "chapter": "arrays",
       "description": "Функция принимает один параметр (массив чисел N*N*N, N > 1) возвращает сумму элементов на его внутренних диагоналях.",
-      "method": "getInnerDiagonalsSum"
+      "method": "getInnerDiagonalsSum",
+      "difficulty": 4
     },
     {
       "id": 108,
       "chapter": "perf",
       "description": "Дано функцию, которая принимает два параметра (массивы из 10000-20000 объектов). Каждый объект имеет структуру вида: <code>{keyField: [{f: 'a'}, {f: 'b'}, {f: 'c'}]}</code>. <code>keyField</code> является не пустым массивом и каждый его элемент является объектом с полем <code>f</code> (обязательно строка). Функция находит в массивах пары объектов (один с первого массива, а другой с второго), которые соответствуют условию: <code>obj1.keyField.f.length == obj2.keyField.f.length</code> и <code>obj1.keyField[i].f = obj2.keyField[i].f</code> (для i от 0 до размера keyField). Доп. условие: совпадений для каждого объекта может быть не больше 1. Исходный код функции доступен (cм. <code>searchObjectPairs</code>), но он работает слишком медленно. Необходимо его оптимизировать.",
-      "method": "searchObjectPairs2"
+      "method": "searchObjectPairs2",
+      "difficulty": 5
     },
     {
       "id": 109,
       "chapter": "bits",
       "description": "Функция принимает два параметра (натуральные числа A, B) и проверяет является ли бит на позиции B числа A единицей (отсчет с младших разрядов).",
-      "method": "checkBit"
+      "method": "checkBit",
+      "difficulty": 2
     },
     {
       "id": 110,
       "chapter": "numbers",
       "description": "Функция принимает два параметра (натуральные числа A, B) и проверяет, образует ли их сумма число, соответствующее формуле <code>2<sup>n</sup> - 1, n &isin; N</code>. ",
-      "method": "checkSumForPower2"
+      "method": "checkSumForPower2",
+      "difficulty": 3
     },
     {
       "id": 111,
       "chapter": "bits",
       "description": "Функция принимает один параметр (натуральное число) и проверяет, являет ли его двоичное представление \"зебру\" вида <code>10101010, 1010101, 101, 1010</code> и т.д. При решении задачи не разрешается переводить число в строку.",
-      "method": "checkNumberBinaryFormWithBits"
+      "method": "checkNumberBinaryFormWithBits",
+      "difficulty": 2
     },
     {
       "id": 112,
       "chapter": "regexp",
       "description": "Функция принимает один параметр (натуральное число) и проверяет, являет ли его двоичное представление \"зебру\" вида <code>10101010, 1010101, 101, 1010</code> и т.д. При решении задачи, двоичное представление числа перевести в строку и проверять регулярным выражением.",
-      "method": "checkNumberBinaryFormWithRegexp"
+      "method": "checkNumberBinaryFormWithRegexp",
+      "difficulty": 2
     },
     {
       "id": 113,
@@ -692,7 +804,8 @@
           }
         ]
       },
-      "method": "logicF1"
+      "method": "logicF1",
+      "difficulty": 2
     },
     {
       "id": 114,
@@ -714,7 +827,8 @@
           }
         ]
       },
-      "method": "logicF2"
+      "method": "logicF2",
+      "difficulty": 3
     },
     {
       "id": 115,
@@ -736,7 +850,8 @@
           }
         ]
       },
-      "method": "logicF3"
+      "method": "logicF3",
+      "difficulty": 3
     },
     {
       "id": 116,
@@ -758,7 +873,8 @@
           }
         ]
       },
-      "method": "logicF4"
+      "method": "logicF4",
+      "difficulty": 3
     },
     {
       "id": 117,
@@ -784,7 +900,8 @@
           }
         ]
       },
-      "method": "logicF5"
+      "method": "logicF5",
+      "difficulty": 4
     },
     {
       "id": 118,
@@ -810,7 +927,8 @@
           }
         ]
       },
-      "method": "logicF6"
+      "method": "logicF6",
+      "difficulty": 4
     },
     {
       "id": 119,
@@ -836,7 +954,8 @@
           }
         ]
       },
-      "method": "logicF7"
+      "method": "logicF7",
+      "difficulty": 4
     },
     {
       "id": 120,
@@ -862,7 +981,8 @@
           }
         ]
       },
-      "method": "logicF8"
+      "method": "logicF8",
+      "difficulty": 4
     },
     {
       "id": 121,
@@ -896,7 +1016,8 @@
           }
         ]
       },
-      "method": "logicF9"
+      "method": "logicF9",
+      "difficulty": 5
     },
     {
       "id": 122,
@@ -930,7 +1051,8 @@
           }
         ]
       },
-      "method": "logicF10"
+      "method": "logicF10",
+      "difficulty": 5
     },
     {
       "id": 123,
@@ -964,7 +1086,8 @@
           }
         ]
       },
-      "method": "logicF11"
+      "method": "logicF11",
+      "difficulty": 5
     },
     {
       "id": 124,
@@ -998,7 +1121,8 @@
           }
         ]
       },
-      "method": "logicF12"
+      "method": "logicF12",
+      "difficulty": 5
     },
     {
       "id": 125,
@@ -1032,7 +1156,8 @@
           }
         ]
       },
-      "method": "logicF13"
+      "method": "logicF13",
+      "difficulty": 5
     },
     {
       "id": 126,
@@ -1066,163 +1191,190 @@
           }
         ]
       },
-      "method": "logicF14"
+      "method": "logicF14",
+      "difficulty": 5
     },
     {
       "id": 127,
       "chapter": "arguments",
-      "description": "Функция может принимать любое (&gt;= 2) кол-во параметров (в описании функции не должно быть объявлено никаких параметров). Первым параметром обязательно идет функция, далее могут быть какие-то другие параметры (а могут и не быть), потом снова идет функция и после нее еще параметры (0 и больше). Необходимо вызвать первую функцию, передав в нее список параметров, который идет до второй функции, а так же результат выполнения второй функции, со списком параметров, которые идут после нее. Пример: аргументы функции - <code>Math.min, 1, 2, 3, Math.max, 4, 5, 6</code>. Функция должна вернуть результат выполнения <code>Math.min(1,2,3,Math.max(4,5,6))<code>. Еще пример: аргументы функции - <code>Math.abs, Math.max, -4, -5, -6</code>. Функция должна вернуть результат выполнения <code>Math.abs(Math.max(-4,-5,-6))<code>.",
-      "method": "callTwoFunctionsIfExist"
+      "description": "Функция может принимать любое (&gt;= 2) кол-во параметров (в описании функции не должно быть объявлено никаких параметров). Первым параметром обязательно идет функция, далее могут быть какие-то другие параметры (а могут и не быть), потом снова идет функция и после нее еще параметры (0 и больше). Необходимо вызвать первую функцию, передав в нее список параметров, который идет до второй функции, а так же результат выполнения второй функции, со списком параметров, которые идут после нее. Пример: аргументы функции - <code>Math.min, 1, 2, 3, Math.max, 4, 5, 6</code>. Функция должна вернуть результат выполнения <code>Math.min(1,2,3,Math.max(4,5,6))</code>. Еще пример: аргументы функции - <code>Math.abs, Math.max, -4, -5, -6</code>. Функция должна вернуть результат выполнения <code>Math.abs(Math.max(-4,-5,-6))<code>.",
+      "method": "callTwoFunctionsIfExist",
+      "difficulty": 3
     },
     {
       "id": 128,
       "chapter": "arguments",
       "description": "Функция может принимать любое (&gt;= 1) кол-во параметров (в описании функции не должно быть объявлено никаких параметров). Первым параметром в нее передается другая функция, которую необходимо вызвать (и вернуть результат ее выполнения) с параметрами, которые идут после нее, но в обратном порядке. Пример: параметры функции - <code>Math.max, 4, 5, 6</code>, функция должна вернуть результат выполнения <code>Math.max(6, 5, 4)</code>.",
-      "method": "callWithReversedList"
+      "method": "callWithReversedList",
+      "difficulty": 2
     },
     {
       "id": 129,
       "chapter": "arguments",
       "description": "Функция может принимать любое (&gt;= 1) кол-во параметров (в описании функции не должно быть объявлено никаких параметров). Первым параметром обязательно идет массив с функциями. Функция возвращает массив с результатами вызова этих функций с параметрами, которые идут после массива с функциями. Пример: параметры - <code>[Math.max, Math.min], [1,2,3], [3,2,1]</code>, функция вернет <code>[Math.max(1,2,3), Math.min(3,2,1)]</code>. Пример2:  параметры - <code>[Math.max, Math.random], [1,2,3]</code>, функция вернет <code>[Math.max(1,2,3), Math.random()]</code>",
-      "method": "callArrayOfFuncs"
+      "method": "callArrayOfFuncs",
+      "difficulty": 4
     },
     {
       "id": 130,
       "chapter": "arguments",
       "description": "Функция может принимать любое (&gt;= 2) кол-во параметров (в описании функции не должно быть объявлено никаких параметров). Если какой-то параметр является функцией, то необходимо ее вызвать, передав в нее все параметры \"не-функции\" исходной функции (соблюдая порядок следования). Исходная функция возвращает массив с результатами вызовов функций-параметров (сохраняя порядок). Пример: параметры - <code>1, Math.min, 2, 3, Math.max, 4</code>, функция вернет - <code>[Math.min(1,2,3,4), Math.max(1,2,3,4)]</code>. Точнои известно, что как минимум один параметр является функцией.",
-      "method": "callWithAllIfFunc"
+      "method": "callWithAllIfFunc",
+      "difficulty": 2
     },
     {
       "id": 131,
       "chapter": "misc",
       "description": "Описать функцию smartSum, вызов которой в виде <code>func(a)(b)</code> вернет сумму аргументов a и b.",
-      "method": "smartSum"
+      "method": "smartSum",
+      "difficulty": 2
     },
     {
       "id": 132,
       "chapter": "misc",
       "description": "Функция принимает один параметр и проверяет, является ли он NaN или нет.",
-      "method": "smartIsNaN"
+      "method": "smartIsNaN",
+      "difficulty": 3
     },
     {
       "id": 133,
       "chapter": "regexp",
       "description": "Функция принимает один параметр (строку) и заменяет в ней цифры <code>0-5</code> на символ <code>*</code>, а <code>6-9</code> - на <code>|</code>.",
-      "method": "replaceDigits2"
+      "method": "replaceDigits2",
+      "difficulty": 2
     },
     {
       "id": 134,
       "chapter": "regexp",
       "description": "Функция принимает один параметр (строку) и заменяет в ней все вхождения <code>+</code>, <code>-</code> на <code>{}</code>.",
-      "method": "replacePlusMinus"
+      "method": "replacePlusMinus",
+      "difficulty": 2
     },
     {
       "id": 135,
       "chapter": "regexp",
       "description": "Функция принимает один параметр (строку) и проверяет, является ли эта строка допустимым IP-адресом. Допустимым считается любой адрес в диапазоне <code>162.196.0.0</code> - <code>162.196.255.255</code>",
-      "method": "checkIp"
+      "method": "checkIp",
+      "difficulty": 4
     },
     {
       "id": 136,
       "chapter": "regexp",
       "description": "Функция принимает один параметр (строку), находит в ней подстроки вида <code>{12,35}</code> и возвращает массив объектов вида: <code>[{x: 12, y: 35}]</code>. Пример: параметр - <code>'abc {1,2} cdef.{33, 46}'</code>, функция вернет - <code>[{x: 1, y: 2}, {x: 33, y: 46}]</code>.",
-      "method": "getCoordinates"
+      "method": "getCoordinates",
+      "difficulty": 4
     },
     {
       "id": 137,
       "chapter": "misc",
       "description": "Описать функцию smartSumWithChains, вызов которой в виде <code>func(a).sum(b)</code>, <code>func(a).c1.c2.c3.sum(b)</code>, <code>func(a).c1.c2.sum(b)</code> или любой другой комбинации c1, c2, c3, вернет сумму a + b.",
-      "method": "smartSumWithChains"
+      "method": "smartSumWithChains",
+      "difficulty": 4
     },
     {
       "id": 138,
       "chapter": "misc",
       "description": "Описать функцию getSetter, которая получает на входе объект и имя одного из его полей и возвращает <code>setter</code> для этого поля или <code>null</code>.",
-      "method": "getSetter"
+      "method": "getSetter",
+      "difficulty": 3
     },
     {
       "id": 139,
       "chapter": "arrays",
       "description": "Функция принимает один параметр - двумерный массив вида <code>[['abc', 123], ['cba', 321]]</code> и возвращает объект вида <code>{abc: 123, cba: 321}</code>. Значения могут затираться в случае совпадения ключей.",
-      "method": "getKeyValueLinks"
+      "method": "getKeyValueLinks",
+      "difficulty": 3
     },
     {
       "id": 140,
       "chapter": "arrays",
       "description": "Функция принимает один параметр - массив, элементами которого могут быть другие массивы (<code>[1, 2, [3], [4, [5]]]</code>) и возвращает \"развернутый\" одномерный массив (<code>[1, 2, 3, 4, 5]</code>).",
-      "method": "multiToOne"
+      "method": "multiToOne",
+      "difficulty": 4
     },
     {
       "id": 141,
       "chapter": "arrays",
       "description": "Функция принимает один параметр - массив, элементами которого могут быть другие массивы (<code>[1, 2, [3], [4, [5]]]</code>) и возвращает \"свернутый\" на максимальную глубину одномерный массив (<code>[[[1, 2, 3, 4, 5]]]</code>).",
-      "method": "multiToOne2"
+      "method": "multiToOne2",
+      "difficulty": 4
     },
     {
       "id": 142,
       "chapter": "arrays",
       "description": "Функция принимает один параметр - массив, элементами которого могут быть другие массивы (<code>[1, 2, [3], [4, [5]]]</code>) и возвращает его максимальную \"глубину\" (3 в примере ранее).",
-      "method": "getMaxDepth"
+      "method": "getMaxDepth",
+      "difficulty": 4
     },
     {
       "id": 143,
       "chapter": "arrays",
       "description": "Функция принимает три параметра - массив, число и значение любого типа. На позицию, равную второму параметру, вставляет значение третьего параметра (таким образом, массив увеличивается на один элемент). Пример: параметры - <code>['a', 'b', 'd'], 2, 'c'</code>, функция вернет - <code>['a', 'b', 'c', 'd']</code>.",
-      "method": "insertAt"
+      "method": "insertAt",
+      "difficulty": 2
     },
     {
       "id": 144,
       "chapter": "strings",
       "description": "Функция принимает два параметра - строки вида <code>1.2.3</code> и возвращает <code>true</code>, если первая строка больше второй. Сравнение идет слева направо. Пример: <code>'1.2.3', '2.3.4'</code> вернет <code>false</code>, <code>'2.3.5', '2.3.4'</code> вернет <code>true</code>.",
-      "method": "compareVersions"
+      "method": "compareVersions",
+      "difficulty": 3
     },
     {
       "id": 145,
       "chapter": "objects",
       "description": "Функция принимает два параметра - объект и другую функцию и возвращает новый объект, состоящий из значений исходного для которых функция-параметр вернет <code>true</code>. Пример: параметры - <code>{a: 1, b: 2, c: 3}, function (value) {return value > 1;}</code>, функция вернет - <code>{b: 2, c: 3}</code>.",
-      "method": "pickByClb"
+      "method": "pickByClb",
+      "difficulty": 3
     },
     {
       "id": 146,
       "chapter": "strings",
       "description": "Функция принимает три параметра - строку и число и символ. Функция возвращает новую строку, на основе исходной, дополнив ее слева и справа символом до нужной длины (если длина исходной строки меньше требуемой). Пример: параметры - <code>'abc', 6, '-'</code>, функция вернет - <code>'--abc-'</code>.",
-      "method": "customPad"
+      "method": "customPad",
+      "difficulty": 2
     },
     {
       "id": 147,
       "chapter": "strings",
       "description": "Функция принимает три параметра - строку и число и символ. Функция возвращает новую строку, на основе исходной, дополнив ее слева символом до нужной длины (если длина исходной строки меньше требуемой). Пример: параметры - <code>'abc', 6, '-'</code>, функция вернет - <code>'---abc'</code>.",
-      "method": "customPadLeft"
+      "method": "customPadLeft",
+      "difficulty": 2
     },
     {
       "id": 148,
       "chapter": "strings",
       "description": "Функция принимает три параметра - строку и число и символ. Функция возвращает новую строку, на основе исходной, дополнив ее справа символом до нужной длины (если длина исходной строки меньше требуемой). Пример: параметры - <code>'abc', 6, '-'</code>, функция вернет - <code>'abc--'</code>.",
-      "method": "customPadRight"
+      "method": "customPadRight",
+      "difficulty": 2
     },
     {
       "id": 149,
       "chapter": "regexp",
       "description": "Функция принимает один параметр-строку и возвращает её же, но с экранированными символами регулярных выражений.",
-      "method": "escapeRegex"
+      "method": "escapeRegex",
+      "difficulty": 3
     },
     {
       "id": 150,
       "chapter": "arrays",
       "description": "Функция принимает двумерный массив и возвращает этот массив, повернутый на 90° по часовой стрелке.",
-      "method": "rotateRight"
+      "method": "rotateRight",
+      "difficulty": 4
     },
     {
       "id": 151,
       "chapter": "arrays",
       "description": "Функция принимает двумерный массив и возвращает этот массив, повернутый на 90° против часовой стрелки.",
-      "method": "rotateLeft"
+      "method": "rotateLeft",
+      "difficulty": 4
     },
     {
       "id": 152,
       "chapter": "arrays",
       "description": "Функция принимает двумерный массив и возвращает этот массив, повернутый на 180°.",
-      "method": "rotate180"
+      "method": "rotate180",
+      "difficulty": 4
     }
   ]
 }

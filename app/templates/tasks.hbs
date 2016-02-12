@@ -1,15 +1,18 @@
 <h3>
   {{#link-to "index"}}/{{/link-to}}
   {{#if chapterModel.name}}
-    {{chapterModel.name}} ({{filteredTasks.length}})
+    {{chapterModel.name}} ({{#if showOnlyNotSolved}}{{visibleTasks.length}} / {{/if}}{{filteredTasks.length}})
   {{else}}
     Все задачи ({{filteredTasks.length}})
   {{/if}}
 </h3>
-{{#each filteredTasks as |task index|}}
-  <div class="alert alert-warning">
+
+<label for="showOnlyNotSolved">{{input type="checkbox" id="showOnlyNotSolved" checked=showOnlyNotSolved}} Скрывать задачи с решением</label>
+
+{{#each sortedTasks as |task index|}}
+<div class="alert {{task.type}}">
     {{partial 'partials/task'}}
-    <p></p>
+    <p>Сложность: {{task.difficulty}} / 5</p>
     {{partial 'partials/solution'}}
   </div>
 {{/each}}

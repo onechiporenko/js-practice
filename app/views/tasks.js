@@ -1,13 +1,19 @@
 import Ember from 'ember';
 
+const {
+  on,
+  run,
+  observer
+} = Ember;
+
 export default Ember.View.extend({
 
-  afterInsert: Ember.on('didInsertElement', function () {
+  afterInsert: on('didInsertElement', function () {
     this.highlight();
   }),
 
-  highlight: Ember.observer('controller.chapter', function () {
-    Ember.run.next(function () {
+  highlight: observer('controller.{chapter,filteredTasks.length}', function () {
+    run.next(function () {
       Prism.highlightAll();
     });
   })
