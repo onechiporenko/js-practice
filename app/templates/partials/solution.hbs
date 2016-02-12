@@ -1,8 +1,0 @@
-{{! `task` - Task }}
-{{! `chapter` - Chapter }}
-
-{{#if task.chapter.renderAsComponent}}
-  <pre><code class="language-javascript">{{component task.chapter.componentPath methodToRender=task.method}}</code></pre>
-{{else}}
-  <pre><code class="language-javascript">{{controller-method this task.chapter.id task.chapter.section task.method}}</code></pre>
-{{/if}}

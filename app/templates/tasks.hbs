@@ -10,10 +10,15 @@
 <label for="showOnlyNotSolved">{{input type="checkbox" id="showOnlyNotSolved" checked=showOnlyNotSolved}} Скрывать задачи с решением</label>
 
 {{#each sortedTasks as |task index|}}
-<div class="alert {{task.type}}">
-    {{partial 'partials/task'}}
+  <div class="alert {{task.type}}">
+    <p>#{{task.id}}. {{{output-description task}}}</p>
+    {{#unless chapter}}
+      <p>Раздел: {{#link-to 'tasks' (query-params chapter=task.chapter.id)}}{{task.chapter.name}}{{/link-to}}</p>
+    {{/unless}}
     <p>Сложность: {{task.difficulty}} / 5</p>
-    {{partial 'partials/solution'}}
+    <p>Решение должно быть в: <code>app/{{task.chapter.section}}/solutions/{{task.chapter.id}}.js#{{task.method}}</code></p>
+    <p>Тесты: <code>tests/{{task.chapter.testsType}}/{{task.chapter.section}}/solutions/{{task.chapter.id}}/{{task.method}}-test.js</code> ({{{link-to-tests task.chapter.id task.method}}})</p>
+    <pre><code class="language-javascript">{{controller-method this task.chapter.id task.chapter.section task.method}}</code></pre>
   </div>
 {{/each}}
 

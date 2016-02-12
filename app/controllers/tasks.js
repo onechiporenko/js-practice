@@ -54,7 +54,7 @@ export default Ember.ArrayController.extend({
     }) : filteredTasks;
   }),
 
-  sortKeys: ['difficulty', 'id'],
+  sortKeys: ['difficulty'],
   sortedTasks: computed.sort('visibleTasks', 'sortKeys'),
 
   setup: on('init', function () {
