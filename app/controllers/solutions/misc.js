@@ -8,6 +8,12 @@ export default Ember.Controller.extend({
 
   smartSumWithChains: Ember.B,
 
-  getSetter: Ember.B
+  getSetter: Ember.B,
+
+  getObjWithNotEnumProperty: Ember.B,
+
+  getObjWithReadOnlyProperty: Ember.B,
+
+  getObjWithCustomGetter: Ember.B
 
 });
