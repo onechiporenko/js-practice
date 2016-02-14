@@ -24,6 +24,8 @@ export default Ember.Controller.extend({
 
   useContext: Ember.B,
 
-  pickByClb: Ember.B
+  pickByClb: Ember.B,
+
+  getAllPaths: Ember.B
 
 });
