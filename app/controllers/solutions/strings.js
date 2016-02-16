@@ -1,5 +1,28 @@
 import Ember from 'ember';
 
+function _splitKey(key) {
+  var insideBraces = false;
+  var currentWord = '';
+  var keys = [];
+  for (var i = 0; i < key.length; i++) {
+    currentWord += key[i];
+    if (key[i] === '{') {
+      insideBraces = true;
+      continue;
+    }
+    if (key[i] === '}') {
+      insideBraces = false;
+      continue;
+    }
+    if (key[i] === '.' && !insideBraces) {
+      keys.push(currentWord.slice(0, -1));
+      currentWord = '';
+    }
+  }
+  keys.push(currentWord);
+  return keys;
+}
+
 export default Ember.Controller.extend({
 
   /**
@@ -125,6 +148,11 @@ export default Ember.Controller.extend({
   /**
    *
    */
-  dotSplit: Ember.B
+  dotSplit: Ember.B,
+
+  /**
+   *
+   */
+  getAllPaths2: Ember.B
 
 });
