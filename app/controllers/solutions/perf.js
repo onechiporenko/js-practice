@@ -40,6 +40,9 @@ export default Ember.Controller.extend({
     return linked;
   },
 
+  /**
+   *
+   */
   searchObjectPairs2: Ember.B
 
 });
