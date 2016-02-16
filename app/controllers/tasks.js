@@ -50,6 +50,9 @@ export default Ember.ArrayController.extend({
     var filteredTasks = this.get('filteredTasks');
     var self = this;
     return showOnlyNotSolved ? filteredTasks.filter(c => {
+      if (!c.get('chapter.isController')) {
+        return true;
+      }
       return self.get(c.get('chapter.id'))[c.get('method')] === Ember.B;
     }) : filteredTasks;
   }),

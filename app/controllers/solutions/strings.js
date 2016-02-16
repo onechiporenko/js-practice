@@ -48,6 +48,8 @@ export default Ember.Controller.extend({
 
   customPadLeft: Ember.B,
 
-  customPadRight: Ember.B
+  customPadRight: Ember.B,
+
+  dotSplit: Ember.B
 
 });

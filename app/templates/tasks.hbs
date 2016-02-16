@@ -7,7 +7,9 @@
   {{/if}}
 </h3>
 
-<label for="showOnlyNotSolved">{{input type="checkbox" id="showOnlyNotSolved" checked=showOnlyNotSolved}} Скрывать задачи с решением</label>
+{{#if chapterModel.isController}}
+  <label for="showOnlyNotSolved">{{input type="checkbox" id="showOnlyNotSolved" checked=showOnlyNotSolved}} Скрывать задачи с решением</label>
+{{/if}}
 
 {{#each sortedTasks as |task index|}}
   <div class="alert {{task.type}}">

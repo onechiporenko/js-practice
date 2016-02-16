@@ -15,5 +15,8 @@ export default DS.Model.extend({
 
   componentPath: Ember.computed('renderAsComponent', function() {
     return this.get('renderAsComponent') ? 'solutions/' + this.get('id') : '';
-  })
+  }),
+
+  isController: Ember.computed.equal('section', 'controllers')
+
 });
