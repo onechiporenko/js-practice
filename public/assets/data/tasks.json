@@ -1417,6 +1417,76 @@
       "description": "Функция принимает один параметр (строку-шаблон) и возвращает все строки, которые подходят под этот шаблон. Пример: параметр - <code>'a.{b,c}.d'</code>, функция вернет - <code>['a.b.d', 'a.c.d']</code>. Пример2: параметр - <code>'a.{b,c}.{d,e}'</code>, функция вернет - <code>['a.b.d', 'a.c.d', 'a.b.e', 'a.c.e']</code>.",
       "method": "getAllPaths2",
       "difficulty": 5
+    },
+    {
+      "id": 159,
+      "chapter": "date",
+      "description": "Функция принимает один параметр (объект Date) и возвращает <code>true</code>, если он соответствует сегоднешней дате.",
+      "method": "isToday",
+      "difficulty": 1
+    },
+    {
+      "id": 160,
+      "chapter": "date",
+      "description": "Функция принимает один параметр (объект Date) и возвращает <code>true</code>, если он соответствует вчерашней дате.",
+      "method": "isYesterday",
+      "difficulty": 1
+    },
+    {
+      "id": 161,
+      "chapter": "date",
+      "description": "Функция принимает один параметр (объект Date) и возвращает <code>true</code>, если он соответствует завтрашней дате.",
+      "method": "isTomorrow",
+      "difficulty": 1
+    },
+    {
+      "id": 162,
+      "chapter": "date",
+      "description": "Функция принимает один параметр (объект Date) и возвращает <code>true</code>, если он соответствует выходному дню (сб или вс).",
+      "method": "isWeekend",
+      "difficulty": 1
+    },
+    {
+      "id": 163,
+      "chapter": "date",
+      "description": "Функция принимает один параметр (объект Date) и возвращает <code>true</code>, если он соответствует рабочему дню (пн - пт).",
+      "method": "isNotWeekend",
+      "difficulty": 1
+    },
+    {
+      "id": 164,
+      "chapter": "date",
+      "description": "Функция принимает три параметра (объекты Date) и возвращает <code>true</code>, если дата первого параметра находится в диапазоне между вторым и третьим.",
+      "method": "isInRange",
+      "difficulty": 2
+    },
+    {
+      "id": 165,
+      "chapter": "date",
+      "description": "Функция принимает один параметр (объект Date) и возвращает <code>true</code>, если дата входит в последнюю неделю.",
+      "method": "isLastWeek",
+      "difficulty": 3
+    },
+    {
+      "id": 166,
+      "chapter": "date",
+      "description": "Функция принимает один параметр (объект Date) и возвращает <code>true</code>, если дата входит в последний месяц.",
+      "method": "isLastMonth",
+      "difficulty": 3
+    },
+    {
+      "id": 167,
+      "chapter": "date",
+      "description": "Функция принимает один параметр (объект Date) и возвращает <code>true</code>, если дата входит в следующую неделю.",
+      "method": "isNextWeek",
+      "difficulty": 3
+    },
+    {
+      "id": 168,
+      "chapter": "date",
+      "description": "Функция принимает один параметр (объект Date) и возвращает <code>true</code>, если дата входит в следюущий месяц.",
+      "method": "isNextMonth",
+      "difficulty": 3
     }
   ]
 }
